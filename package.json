@@ -1,46 +1,46 @@
 {
-  "name": "tm-travel-app"
- ,"license": ""
- ,"private": true
- ,"description": "Trinity Mirror Regionals Travel webapp"
- ,"version": "0.0.0"
- ,"homepage": "http://www.trinitymirror.com"
- ,"author": {
-    "name": "Trinity Mirror"
-   ,"email": "tmcreative@trinitymirror.com"
-   ,"url": "http://www.trinitymirror.com"
-  }
- ,"contributors": [
+  "name": "tm-travel-app",
+  "license": "",
+  "private": true,
+  "description": "Trinity Mirror Regionals Travel webapp",
+  "version": "0.0.0",
+  "homepage": "http://www.trinitymirror.com",
+  "author": {
+    "name": "Trinity Mirror",
+    "email": "tmcreative@trinitymirror.com",
+    "url": "http://www.trinitymirror.com"
+  },
+  "contributors": [
     {
-      "name": "Michael Bragg"
-     ,"email": "michael@michaelbragg.net"
-     ,"url": "http://michaelbragg.net"
-    }
-   ,{
+      "name": "Michael Bragg",
+      "email": "michael@michaelbragg.net",
+      "url": "http://michaelbragg.net"
+    },
+    {
       "name": "Jonathan Masters"
     }
-  ]
- ,"dependencies": {}
- ,"devDependencies": {
-    "grunt": "0.4.x"
-   ,"grunt-autoprefixer": "1.0.x"
-   ,"grunt-contrib-clean": "0.6.x"
-   ,"grunt-contrib-copy": "0.6.x"
-   ,"grunt-contrib-csslint": "0.3.x"
-   ,"grunt-contrib-imagemin": "0.8.x"
-   ,"grunt-contrib-less": "0.11.x"
-   ,"grunt-contrib-jshint": "0.10.x"
-   ,"grunt-contrib-watch": "0.6.x"
-   ,"grunt-css-metrics": "0.1.x"
-   ,"grunt-express": "1.4.x"
-   ,"grunt-hashres": "0.4.x"
-   ,"grunt-htmlhint": "0.4.x"
-   ,"grunt-pagespeed": "0.3.x"
-   ,"grunt-parker": "0.1.x"
-   ,"grunt-perfbudget": "0.1.x"
-   ,"phantomcss": "0.7.x"
-   ,"grunt-svgmin": "1.0.x"
-   ,"phantomcss": "0.7.x"
-   ,"psi": "0.1.x"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-autoprefixer": "1.0.x",
+    "grunt-cli": "0.1.x",
+    "grunt-contrib-clean": "0.6.x",
+    "grunt-contrib-copy": "0.6.x",
+    "grunt-contrib-csslint": "0.3.x",
+    "grunt-contrib-imagemin": "0.8.x",
+    "grunt-contrib-jshint": "0.10.x",
+    "grunt-contrib-less": "0.11.x",
+    "grunt-contrib-watch": "0.6.x",
+    "grunt-css-metrics": "0.1.x",
+    "grunt-express": "1.4.x",
+    "grunt-hashres": "0.4.x",
+    "grunt-htmlhint": "0.4.x",
+    "grunt-pagespeed": "0.3.x",
+    "grunt-parker": "0.1.x",
+    "grunt-perfbudget": "0.1.x",
+    "grunt-svgmin": "1.0.x",
+    "phantomcss": "0.7.x",
+    "psi": "0.1.x"
   }
 }
