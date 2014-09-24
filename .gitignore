@@ -1,0 +1,16 @@
+# Trinity Mirror Travel App
+
+##  NodeJS
+
+node_modules/
+npm-debug.log
+.grunt
+
+## Bower
+
+src/_includes/bower_components/
+
+##  Site
+
+_site/
+src/static/css/*.css
