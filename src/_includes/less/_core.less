@@ -1,0 +1,327 @@
+/* =============================================================================
+Core Elements - Layout
+========================================================================== */
+
+
+*{
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;  
+}
+
+.clear {
+  clear: both;
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  Wrapper  */
+
+ul{margin:0; padding:0;}
+
+.tt__wrapper{
+	max-width:950px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 481px) {
+  .tt__wrapper{
+  margin: 20px auto;
+  }
+}
+
+
+
+/*  Road Update Section */
+
+.tt-entry{
+  #GradientGrey > .vertical;
+  min-height:50px;
+  position:relative;
+}
+
+.in-shadow{
+  position:absolute;
+  z-index:1;
+  .innershadow;
+  height:10px;
+  width:100%;
+  
+}
+
+/*  Global Road Update Icons */ 
+
+.ru-icon {
+  position:absolute;
+  height:100%;
+  width:80px;
+  background-color:@grey;
+  left:0;
+}
+
+.status-icon{
+  background-image:url(../gui/status-icons/sprite_icon_status.svg);
+  background-size: 500%;
+  background-repeat: no-repeat;
+  width:80px;
+  height:90px;
+}
+
+.severity-high .ru-icon{
+  background-position: 3px 5px;
+  border-right:solid 8pt @severity5;
+}
+
+.severity-med .ru-icon{
+  background-position: -65px 5px;
+  border-right:solid 8pt @severity4;
+}
+
+.severity-low .ru-icon{
+  background-position: -135px 5px;
+  border-right:solid 8pt @severity3;
+}
+
+.severity-cleared .ru-icon{
+  background-position: -275px 5px;
+  border-right:solid 8pt @severity1;
+}
+
+.special-event .ru-icon{
+  background-position: -202px 5px;
+  border-right:solid 8pt @eventsWarning;
+}
+
+.road-closed .ru-icon{
+  background-position: 5px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+.accident .ru-icon{
+  background-position: -64px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+.lane-closure .ru-icon{
+  background-position: -275px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+@media screen and (min-width: 481px) {
+
+.ru-icon {
+  width:120px;
+}
+
+.status-icon{
+  background-size: auto;
+  height: 120px;
+}
+
+.severity-high .ru-icon{
+  background-position: 12px 5px;
+  border-right:solid 8pt @severity5;
+}
+
+.severity-med .ru-icon{
+  background-position: -82px 5px;
+  border-right:solid 8pt @severity4;
+}
+
+.severity-low .ru-icon{
+  background-position: -177px 5px;
+  border-right:solid 8pt @severity3;
+}
+
+.severity-cleared .ru-icon{
+  background-position: -370px 5px;
+  border-right:solid 8pt @severity1;;
+}
+
+.special-event .ru-icon{
+  background-position: -270px 5px;
+  border-right:solid 8pt @eventsWarning;
+}
+
+.road-closed .ru-icon{
+  background-position: 15px -110px;
+  border-right:solid 8pt @severity5;
+}
+
+.accident .ru-icon{
+  background-position: -78px -110px;
+  border-right:solid 8pt @severity5;
+}
+
+.lane-closure .ru-icon{
+  background-position: -370px -110px;
+  border-right:solid 8pt @severity5;
+}
+
+}
+
+
+/*  Road Update Deatils */
+
+.ru-details{
+  margin-left: 80px;
+  padding:10px 20px;
+}
+
+.ru-details h3{
+  font-size:1.8em;
+  font-weight:700;
+  line-height:1.1em;
+  padding-bottom:5px;
+}
+
+.ru-details p{
+  font-size:1.1em;
+  padding-bottom: 0.5em
+}
+
+.ru-area{
+  position:relative;
+  padding-right:40px;
+}
+
+.ru-area-drop{
+  position:absolute;
+  background-image:url(../gui/expand-icon.svg);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  width:35px;
+  height:100%;
+  right:0;
+  top:0;
+  cursor: pointer;
+}
+
+.ru-top-bar{
+  width:100%;
+  #GradientGrey > .horizontal;
+  margin: 10px 0;
+}
+
+.road-name{
+  position:relative;
+  min-width:80px;
+  display:inline-block;
+  height:28px;
+}
+
+.ru-time{
+  float:right;
+  padding:6px 10px;
+}
+
+.ru-time .clock-icon{
+  display:block;
+  background-image:url(../gui/clock-icon.svg);
+  background-repeat: no-repeat;
+  height:28px;
+  width:16px;
+  float:left;
+}
+
+
+.ru-time .ru-time-text{
+ float:left;
+ margin-left:10px;
+ font-weight:700;
+  }
+
+
+@media screen and (min-width: 481px) {
+.ru-details{
+  margin-left: 120px;
+}
+
+}
+
+.road-name:before{
+  content:'';
+  right:-28px;
+  position: absolute;
+  width:0;
+  height:0;
+}
+
+
+  /* Severity High Classes */
+
+.severity-high .road-name:before, .road-closed .road-name:before, .accident .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity5;
+  border-bottom:solid 14px @severity5;
+}
+
+.severity-high .ru-top-bar h2, .road-closed .ru-top-bar h2, .accident .ru-top-bar h2{
+  background-color:@severity5;
+  padding:2px 8px 1px 8px;
+} 
+
+
+/* Severity Medium Classes */
+
+.severity-med .road-name:before, .lane-closure .road-name:before,{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity4;
+  border-bottom:solid 14px @severity4;
+}
+
+.severity-med .ru-top-bar h2, .lane-closure .ru-top-bar h2{
+  background-color:@severity4;
+  padding:2px 8px 1px 8px;
+} 
+
+/* Severity Low Classes */
+
+.severity-low .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity3;
+  border-bottom:solid 14px @severity3;
+}
+
+.severity-low .ru-top-bar h2{
+  background-color:@severity3;
+  padding:2px 8px 1px 8px;
+} 
+
+
+
+/* Severity Low Cleared */
+
+.severity-cleared .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity1;
+  border-bottom:solid 14px @severity1;
+}
+
+.severity-cleared .ru-top-bar h2{
+  background-color:@severity1;
+  padding:2px 8px 1px 8px;
+} 
+
+/* Severity Low Cleared */
+
+.special-event .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @eventsWarning;
+  border-bottom:solid 14px @eventsWarning;
+}
+
+.special-event .ru-top-bar h2{
+  background-color:@eventsWarning;
+  padding:2px 8px 1px 8px;
+}
+

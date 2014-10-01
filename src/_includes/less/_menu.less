@@ -1,0 +1,162 @@
+/* =============================================================================
+Menu 
+========================================================================== */
+
+
+.main__nav{
+  float:left;
+}
+
+.main__nav ul, .refresh__nav ul, .road-status ul{
+  list-style-type: none;
+}
+
+.main__nav ul li {
+  float:left;
+  margin-right:10px;
+  height:60px;
+}
+
+/* ==================================================================
+Menu icons 
+===================================================================*/
+
+.icon{
+  display: inline-block;
+  width:60px;
+  height:60px;
+  border:2px solid #fff;
+  border-radius:60px;
+  opacity:0.75;
+  transition: all .5s ease;
+}
+
+.icon:hover{ opacity:1;}
+
+.menu-icon{
+  background-image:url(../gui/menu-icons/sprite_icon_mainmenu.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-bus{
+  background-position: -6px -14px;
+}
+
+.icon-metro{
+  background-position: -6px -93px;
+}
+
+.icon-planes{
+  background-position: -6px -168px;
+}
+
+.icon-trains{
+  background-position: -6px -245px;
+}
+
+.icon-roads{
+  background-position: -6px -320px;
+}
+
+
+/* ==================================================================
+Refresh / Order Icons
+===================================================================*/
+
+.refresh__nav{
+  float:right;
+}
+
+.refresh__nav ul li {
+  float:left;
+  margin-left:10px;
+  height:60px;
+}
+
+.refresh__nav ul li a{
+  height:60px;
+}
+
+.refresh__nav ul li:first-child {
+  margin-right:0px;
+}
+
+.refresh__nav ul li a{
+  display:block;
+}
+
+.refresh-icon{
+  background-image:url(../gui/menu-icons/sprite_icon_refreshmenu.svg);
+  background-repeat: no-repeat;
+  opacity:1;
+}
+
+.icon-refresh{
+  background-position: -4px -13px;
+
+}
+
+.icon-order{
+  background-position: -5px -90px;
+  transition: all .3s ease;
+}
+
+.icon-order-active{
+  background-position: -65px -90px !important; 
+}
+
+
+/* ==================================================================
+Order Menu Dropdown
+===================================================================*/
+
+.refresh-menu{
+  background-color: @greyMed;
+  height:0;
+  transition: all .3s ease;
+}
+
+.refresh-menu .order-items li{
+  display:block;
+  font-size:1.4em;
+  line-height: 1.8em;
+  font-weight: 700;
+  border-bottom:solid 1px #a3a3a1;
+}
+
+.refresh-menu .order-items li a{
+  display:block;
+  color:@white;
+  padding:10px 30px;
+  width:100%;
+  height:50px;
+  cursor:pointer;
+}
+
+.refresh-menu-active{
+ display:block;
+ height:102px;
+}
+
+.refresh-menu .order-items li a:hover{
+  background-color:#c2c2c2;
+}
+
+.refresh-menu .order-icon{
+  display: block;
+  width:28px;
+  height:28px;
+  float:left;
+  background-image:url(../gui/menu-icons/sprite_icon_ordermenu.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-right:15px;
+  transition: all .3s ease;
+}
+
+.order-active{
+  background-position: -55px 0 !important;
+}
+
+
+
