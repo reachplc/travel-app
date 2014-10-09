@@ -26,7 +26,9 @@ Menu icons
   width:60px;
   height:60px;
   border:2px solid #fff;
-  border-radius:60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
   opacity:0.75;
   transition: all .5s ease;
 }
@@ -114,12 +116,11 @@ Order Menu Dropdown
   background-color: @greyMed;
   height:0;
   transition: all .3s ease;
+  overflow: hidden;
 }
 
 .refresh-menu .order-items li{
-  display:block;
-  font-size:1.4em;
-  line-height: 1.8em;
+  display:block; 
   font-weight: 700;
   border-bottom:solid 1px #a3a3a1;
 }
@@ -127,6 +128,8 @@ Order Menu Dropdown
 .refresh-menu .order-items li a{
   display:block;
   color:@white;
+  font-size:1.4em;
+  line-height: 1.8em;
   padding:10px 30px;
   width:100%;
   height:50px;

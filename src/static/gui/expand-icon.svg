@@ -2,10 +2,48 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+	 width="206.834px" height="30px" viewBox="0 -0.001 206.834 30" enable-background="new 0 -0.001 206.834 30" xml:space="preserve"
+	>
 <g>
-	<circle fill="#6B6B6B" cx="15" cy="14.999" r="15"/>
+	<g>
+		<circle fill="#6B6B6B" cx="15" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17.486,9.017 
+		10.537,14.97 17.486,20.922 	"/>
 </g>
-<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17.487,9.017 
-	10.537,14.97 17.487,20.922 "/>
+<g>
+	<g>
+		<circle fill="#00A900" cx="191.834" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="186.02,12.513 
+		191.972,19.462 197.924,12.513 	"/>
+</g>
+<g>
+	<g>
+		<circle fill="#ED1C24" cx="51.167" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="45.353,12.513 
+		51.305,19.462 57.257,12.513 	"/>
+</g>
+<g>
+	<g>
+		<circle fill="#FF8B00" cx="88.5" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="82.686,12.513 
+		88.638,19.462 94.59,12.513 	"/>
+</g>
+<g>
+	<g>
+		<circle fill="#FBC934" cx="123.833" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="118.019,12.513 
+		123.971,19.462 129.923,12.513 	"/>
+</g>
+<g>
+	<g>
+		<circle fill="#007ADF" cx="157.833" cy="14.999" r="15"/>
+	</g>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="152.019,12.513 
+		157.971,19.462 163.923,12.513 	"/>
+</g>
 </svg>

@@ -9,11 +9,8 @@ Core Elements - Layout
   box-sizing: border-box;  
 }
 
-.clear {
-  clear: both;
-}
 
-.cf:after {
+.cf:before, .cf:after {
   content: "";
   display: table;
   clear: both;
@@ -21,11 +18,18 @@ Core Elements - Layout
 
 /*  Wrapper  */
 
-ul{margin:0; padding:0;}
+.tt__wrapper ul{
+  margin:0; padding:0;
+}
 
 .tt__wrapper{
+  display:block;
 	max-width:950px;
   margin: 0 auto;
+  color: @textColour;
+  line-height: @baseLineHeight;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
 }
 
 @media screen and (min-width: 481px) {
@@ -34,14 +38,33 @@ ul{margin:0; padding:0;}
   }
 }
 
-
-
 /*  Road Update Section */
 
 .tt-entry{
+  display:block;
   #GradientGrey > .vertical;
-  min-height:50px;
   position:relative;
+  -webkit-filter: blur(0px);
+  transition: all .3s ease;
+}
+
+#road-news, .road-status-menu{
+  display:block;
+}
+
+.entry-blur{
+  -webkit-filter: blur(4px);
+  opacity:0.4;
+}
+
+.ru-highlight{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .in-shadow{
@@ -119,47 +142,47 @@ ul{margin:0; padding:0;}
 }
 
 .status-icon{
-  background-size: auto;
+  background-size: 400%;
   height: 120px;
 }
 
 .severity-high .ru-icon{
-  background-position: 12px 5px;
+  background-position: 16px 5px;
   border-right:solid 8pt @severity5;
 }
 
 .severity-med .ru-icon{
-  background-position: -82px 5px;
+  background-position: -70px 5px;
   border-right:solid 8pt @severity4;
 }
 
 .severity-low .ru-icon{
-  background-position: -177px 5px;
+  background-position: -160px 5px;
   border-right:solid 8pt @severity3;
 }
 
 .severity-cleared .ru-icon{
-  background-position: -370px 5px;
+  background-position: -338px 5px;
   border-right:solid 8pt @severity1;;
 }
 
 .special-event .ru-icon{
-  background-position: -270px 5px;
+  background-position: -245px 5px;
   border-right:solid 8pt @eventsWarning;
 }
 
 .road-closed .ru-icon{
-  background-position: 15px -110px;
+  background-position: 21px -110px;
   border-right:solid 8pt @severity5;
 }
 
 .accident .ru-icon{
-  background-position: -78px -110px;
+  background-position: -67px -110px;
   border-right:solid 8pt @severity5;
 }
 
 .lane-closure .ru-icon{
-  background-position: -370px -110px;
+  background-position: -335px -110px;
   border-right:solid 8pt @severity5;
 }
 
@@ -174,10 +197,18 @@ ul{margin:0; padding:0;}
 }
 
 .ru-details h3{
-  font-size:1.8em;
+  font-size:1.5em;
   font-weight:700;
   line-height:1.1em;
   padding-bottom:5px;
+}
+
+@media screen and (min-width: 481px) {
+
+.ru-details h3 {
+  font-size: 1.8em;
+}
+
 }
 
 .ru-details p{
@@ -188,21 +219,43 @@ ul{margin:0; padding:0;}
 .ru-area{
   position:relative;
   padding-right:40px;
+  margin:20px 0;
 }
 
 .ru-area-drop{
-  position:absolute;
-  background-image:url(../gui/expand-icon.svg);
-  background-position: 100% 50%;
+  position: absolute;
+  background-image: url(../gui/expand-icon.svg);
+  background-position: 0 0;
   background-repeat: no-repeat;
-  width:35px;
-  height:100%;
-  right:0;
-  top:0;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
   cursor: pointer;
 }
 
+.severity-high .drop-active{
+   background-position: -36px 0;
+}
+
+.severity-med .drop-active{
+   background-position: -73px 0;
+}
+
+.severity-low .drop-active{
+   background-position: -108px 0;
+}
+
+.severity-cleared .drop-active{
+   background-position: -176px 0;
+}
+
+.special-event .drop-active{
+   background-position: -142px 0;
+}
+
 .ru-top-bar{
+  display:block;
   width:100%;
   #GradientGrey > .horizontal;
   margin: 10px 0;
@@ -216,6 +269,7 @@ ul{margin:0; padding:0;}
 }
 
 .ru-time{
+  display:block;
   float:right;
   padding:6px 10px;
 }
@@ -224,7 +278,7 @@ ul{margin:0; padding:0;}
   display:block;
   background-image:url(../gui/clock-icon.svg);
   background-repeat: no-repeat;
-  height:28px;
+  height:16px;
   width:16px;
   float:left;
 }
@@ -252,8 +306,7 @@ ul{margin:0; padding:0;}
   height:0;
 }
 
-
-  /* Severity High Classes */
+/* Severity High Classes */
 
 .severity-high .road-name:before, .road-closed .road-name:before, .accident .road-name:before{
   border-top: solid 14px transparent;
@@ -326,3 +379,100 @@ ul{margin:0; padding:0;}
   padding:2px 8px 1px 8px;
 }
 
+
+
+/* =====================================================
+
+Social Buttons
+
+====================================================== */
+
+.ru-video{
+  display:block;
+  float:left;
+  margin-top:20px;
+}
+
+.s-icon{
+  display:block;
+  float:left;
+  width:42px;
+  height:42px;
+  background-image:url(../gui/menu-icons/sprite_icon_social_icons.svg);
+  border:2px solid #6B6B6B;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.ru-social{
+  display:block;
+  position: relative;
+  display:none;
+ margin-bottom:20px;
+}
+
+.ru-social-active{
+  display:block;
+  overflow:visible;
+  height: 120px;
+}
+
+.ru-social-icons{
+  display:block;
+  margin-top:20px;
+  float:right;
+}
+
+.ru-social-icons span{
+  margin-left:5px;
+}
+
+@media screen and (min-width: 481px) {
+  .ru-social-icons span{
+    margin-left: 20px;
+  }
+}
+
+.ru-icon-video{
+  background-position:-12px -13px;
+}
+
+.ru-icon-video:hover{
+  background-position:-12px -53px;
+}
+
+.ru-icon-email{
+  background-position:-77px -14px;
+}
+
+.ru-icon-email:hover{
+  background-position:-77px -55px;
+}
+
+.ru-icon-twitter{
+  background-position:-143px -12px;
+}
+
+.ru-icon-twitter:hover{
+  background-position:-143px -53px;
+}
+
+.ru-icon-facebook{
+  background-position:-208px -12px;
+}
+
+.ru-icon-facebook:hover{
+  background-position:-208px -54px;
+}
+
+
+.ru-icon-google{
+  background-position:-273px -12px;
+}
+
+.ru-icon-google:hover{
+  background-position:-273px -52px;
+}
