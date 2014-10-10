@@ -23,8 +23,8 @@ $(document).ready(function() {
  */
 
 $(document).ready(function() {
-    $('.order-items li a ').click(function(event) {
-        $('.order-items li a span').attr('class', 'order-icon');
+    $('.order-items > li ').click(function(event) {
+        $('.order-items > li > span').attr('class', 'order-icon');
         $(this).find('span').addClass('order-active');
     });
 
@@ -37,49 +37,50 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-    $('.road-status-menu > li').click(function(event) {
+    $('.road-status-menu > li').addClass("li-active");
 
-        event.preventDefault();
+    $('.road-status-menu').on('click', '.li-active', function(e) {
+
+        $('.road-status-menu > li').addClass("entry-fade");
+
+        $('.road-status-menu > li').removeClass("li-active");
+
+        e.preventDefault();
 
         var checkElement = $(this).find('.ru-social');
-        console.log(checkElement);
+
+        var thisElement = $(this);
+
+        checkHandle(checkElement, thisElement);
+
+    });
+
+    function checkHandle(checkElement, thisElement) {
 
         $('.road-status-menu li').find('.ru-social').slideUp('fast');
 
         $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
 
         if ((checkElement.is('.ru-social')) && (checkElement.is(':visible'))) {
-            console.log('not visible')
+
             checkElement.slideUp('fast');
+
+            $('.road-status-menu > li').removeClass("entry-fade");
+
+            $('.road-status-menu > li').addClass("li-active");
 
         }
 
         if ((checkElement.is('.ru-social')) && (!checkElement.is(':visible'))) {
-            console.log('visible')
+
             checkElement.slideDown('fast');
-            $(this).closest('li').find('.ru-area-drop').addClass('drop-active');
+
+            $(thisElement).closest('li').find('.ru-area-drop').addClass('drop-active');
+
+            $(thisElement).closest('li').removeClass("entry-fade");
+
+            $(thisElement).closest('li').addClass("li-active");
 
         }
-
-        /*
-
-        if ($(this).find('.ru-social').hasClass('ru-social-active')) {
-
-            $(this).find('.ru-social').removeClass('ru-social-active');
-
-            $(this).find('.ru-area-drop').removeClass('drop-active');
-
-        } else {
-
-            $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
-
-            $('.road-status-menu li').find('.ru-social').removeClass('ru-social-active');
-
-            $(this).closest('li').find('.ru-social').addClass('ru-social-active');
-
-            $(this).closest('li').find('.ru-area-drop').addClass('drop-active');
-
-        } */
-
-    });
+    };
 });

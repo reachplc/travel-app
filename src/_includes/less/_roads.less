@@ -1,25 +1,36 @@
 /* =============================================================================
-Core Elements - Layout
+Buses Elements - Layout
 ========================================================================== */
 
 
-*{
+* {
    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
 }
 
 
-.cf:before, .cf:after {
+.cf:before, .cf:after{
   content: "";
   display: table;
   clear: both;
 }
 
-/*  Wrapper  */
+/*  =====================================================
+
+  Wrapper
+
+=====================================================*/
 
 .tt__wrapper ul{
   margin:0; padding:0;
+}
+
+.tt__wrapper ::selection {
+  background: #c8c8c8; /* WebKit/Blink Browsers */
+}
+.tt__wrapper ::-moz-selection {
+  background: #c8c8c8; /* Gecko Browsers */
 }
 
 .tt__wrapper{
@@ -38,30 +49,27 @@ Core Elements - Layout
   }
 }
 
-/*  Road Update Section */
+/*  =====================================================
+
+Road Update Section
+
+===================================================== */
 
 .tt-entry{
   display:block;
   #GradientGrey > .vertical;
   position:relative;
+  opacity:1;
+  transition: all .2s ease;
 }
 
 #road-news, .road-status-menu{
   display:block;
 }
 
-.entry-blur{
-  opacity:0.4;
-}
+.entry-fade{
+  opacity:0.3;
 
-.ru-highlight{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  top: 0;
-  left: 0;
-  z-index: 2;
 }
 
 .in-shadow{
@@ -73,7 +81,11 @@ Core Elements - Layout
 
 }
 
-/*  Global Road Update Icons */
+/*  =====================================================
+
+Global Road Update Icons
+
+===================================================== */
 
 .ru-icon {
   position:absolute;
@@ -140,7 +152,7 @@ Core Elements - Layout
 
 .status-icon{
   background-size: 400%;
-  height: 120px;
+  min-height: 115px;
 }
 
 .severity-high .ru-icon{
@@ -169,12 +181,12 @@ Core Elements - Layout
 }
 
 .road-closed .ru-icon{
-  background-position: 21px -110px;
+  background-position: 18px -110px;
   border-right:solid 8pt @severity5;
 }
 
 .accident .ru-icon{
-  background-position: -67px -110px;
+  background-position: -72px -105px;
   border-right:solid 8pt @severity5;
 }
 
@@ -186,7 +198,11 @@ Core Elements - Layout
 }
 
 
-/*  Road Update Deatils */
+/* =====================================================
+
+ Road Update Deatils
+
+ ===================================================== */
 
 .ru-details{
   margin-left: 80px;
@@ -194,7 +210,7 @@ Core Elements - Layout
 }
 
 .ru-details h3{
-  font-size:1.5em;
+  font-size:1.4em;
   font-weight:700;
   line-height:1.1em;
   padding-bottom:5px;
@@ -203,7 +219,7 @@ Core Elements - Layout
 @media screen and (min-width: 481px) {
 
 .ru-details h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 }
@@ -285,14 +301,13 @@ Core Elements - Layout
  float:left;
  margin-left:10px;
  font-weight:700;
-  }
+}
 
 
 @media screen and (min-width: 481px) {
-.ru-details{
-  margin-left: 120px;
-}
-
+  .ru-details{
+    margin-left: 120px;
+  }
 }
 
 .road-name:before{
@@ -303,7 +318,11 @@ Core Elements - Layout
   height:0;
 }
 
-/* Severity High Classes */
+/* =====================================================
+
+Severity High Classes
+
+===================================================== */
 
 .severity-high .road-name:before, .road-closed .road-name:before, .accident .road-name:before{
   border-top: solid 14px transparent;
@@ -318,7 +337,11 @@ Core Elements - Layout
 }
 
 
-/* Severity Medium Classes */
+/* =====================================================
+
+Severity Medium Classes
+
+===================================================== */
 
 .severity-med .road-name:before, .lane-closure .road-name:before,{
   border-top: solid 14px transparent;
@@ -332,7 +355,11 @@ Core Elements - Layout
   padding:2px 8px 1px 8px;
 }
 
-/* Severity Low Classes */
+/* =====================================================
+
+Severity Low Classes
+
+===================================================== */
 
 .severity-low .road-name:before{
   border-top: solid 14px transparent;
@@ -348,7 +375,11 @@ Core Elements - Layout
 
 
 
-/* Severity Low Cleared */
+/* =====================================================
+
+Severity Low Cleared
+
+===================================================== */
 
 .severity-cleared .road-name:before{
   border-top: solid 14px transparent;
