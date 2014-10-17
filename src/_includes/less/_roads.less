@@ -214,6 +214,7 @@ Global Road Update Icons
   font-weight:700;
   line-height:1.1em;
   padding-bottom:5px;
+  color:@greyXDark;
 }
 
 @media screen and (min-width: 481px) {
@@ -240,32 +241,38 @@ Global Road Update Icons
   background-image: url(../gui/expand-icon.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
+  width: 23px;
+  height: 23px;
   right: 0;
   top: 0;
   cursor: pointer;
 }
 
 .severity-high .drop-active{
-   background-position: -36px 0;
+   background-position: -27px 0;
 }
 
 .severity-med .drop-active{
-   background-position: -73px 0;
+   background-position: -55px 0;
 }
 
 .severity-low .drop-active{
-   background-position: -108px 0;
+   background-position: -81px 0;
 }
 
 .severity-cleared .drop-active{
-   background-position: -176px 0;
+   background-position: -132px 0;
 }
 
 .special-event .drop-active{
-   background-position: -142px 0;
+   background-position: -106px 0;
 }
+
+/* =====================================================
+
+ Roads Entry Update Top Bar
+
+ ===================================================== */
 
 .ru-top-bar{
   display:block;
@@ -274,33 +281,29 @@ Global Road Update Icons
   margin: 10px 0;
 }
 
-.road-name{
+.ru-top-bar .road-name{
   position:relative;
   min-width:80px;
   display:inline-block;
   height:28px;
 }
 
-.ru-time{
-  display:block;
-  float:right;
-  padding:6px 10px;
-}
-
-.ru-time .clock-icon{
+.ru-top-bar .clock-icon{
   display:block;
   background-image:url(../gui/clock-icon.svg);
   background-repeat: no-repeat;
   height:16px;
   width:16px;
-  float:left;
+  float:right;
+  margin:6px;
 }
 
 
-.ru-time .ru-time-text{
- float:left;
+.ru-top-bar .ru-time-text{
+ float:right;
  margin-left:10px;
  font-weight:700;
+ margin:6px;
 }
 
 
@@ -312,6 +315,7 @@ Global Road Update Icons
 
 .road-name:before{
   content:'';
+  top:0;
   right:-28px;
   position: absolute;
   width:0;
@@ -448,18 +452,18 @@ Social Buttons
   height: 120px;
 }
 
-.ru-social-icons{
+.social-icons{
   display:block;
   margin-top:20px;
   float:right;
 }
 
-.ru-social-icons span{
+.social-icons span{
   margin-left:5px;
 }
 
 @media screen and (min-width: 481px) {
-  .ru-social-icons span{
+  .social-icons span{
     margin-left: 20px;
   }
 }
