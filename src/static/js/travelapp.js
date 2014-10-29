@@ -38,10 +38,10 @@ $(document).ready(function() {
 
 $(document).ready(function(e) {
 
-    $('.road-status-menu > li').addClass("li-active");
+    $('.road-status-menu > li').addClass('li-active');
     $('.road-status-menu').on('click', '.li-active', function(e) {
-        $('.road-status-menu > li').addClass("entry-fade");
-        $('.road-status-menu > li').removeClass("li-active");
+        $('.road-status-menu > li').addClass('entry-fade');
+        $('.road-status-menu > li').removeClass('li-active');
 
         e.preventDefault();
         var checkElement = $(this).find('.ru-social');
@@ -55,8 +55,7 @@ $(document).ready(function(e) {
         $('.road-status-menu > li').removeClass("li-active");
         $('.road-status-menu > li').removeClass("entry-fade");
         $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
-        $('.road-status-menu > li').addClass("li-active");
-
+        $('.road-status-menu > li').addClass('li-active');
 
     });
 
@@ -68,21 +67,18 @@ $(document).ready(function(e) {
 
         if ((checkElement.is('.ru-social')) && (checkElement.is(':visible'))) {
             checkElement.slideUp('fast');
-            $('.road-status-menu > li').removeClass("entry-fade");
-            $('.road-status-menu > li').addClass("li-active");
+            $('.road-status-menu > li').removeClass('entry-fade');
+            $('.road-status-menu > li').addClass('li-active');
         }
 
         if ((checkElement.is('.ru-social')) && (!checkElement.is(':visible'))) {
             checkElement.slideDown('fast');
             $(thisElement).closest('li').find('.ru-area-drop').addClass('drop-active');
-            $(thisElement).closest('li').removeClass("entry-fade");
-            $(thisElement).closest('li').addClass("li-active");
-
+            $(thisElement).closest('li').removeClass('entry-fade');
+            $(thisElement).closest('li').addClass('li-active');
 
         }
-
-
-    };
+    }
 });
 
 /** ===================================================================
@@ -93,12 +89,11 @@ $(document).ready(function() {
 
     $('.train-info').addClass("li-active");
     $('#train-news').on('click', '.li-active', function(e) {
-        $('.train-info').addClass("entry-fade");
-        $('.train-info').removeClass("li-active");
+        $('.train-info').addClass('entry-fade');
+        $('.train-info').removeClass('li-active');
 
         e.preventDefault();
         var checkElements = $(this).next('tr');
-        console.log(checkElements)
         var thisElements = $(this);
         checkHandlers(checkElements, thisElements);
     });
@@ -110,17 +105,17 @@ $(document).ready(function() {
 
         if ((checkElements.is('.train-social')) && (checkElements.is(':visible'))) {
             checkElements.slideUp('fast');
-            $('.train-info').removeClass("entry-fade");
-            $('.train-info').addClass("li-active");
+            $('.train-info').removeClass('entry-fade');
+            $('.train-info').addClass('li-active');
         }
 
         if ((checkElements.is('.train-social')) && (!checkElements.is(':visible'))) {
             checkElements.slideDown('fast');
             $(thisElements).find('.trains-drop').addClass('drop-active');
-            $(thisElements).removeClass("entry-fade");
-            $(thisElements).addClass("li-active");
+            $(thisElements).removeClass('entry-fade');
+            $(thisElements).addClass('li-active');
         }
-    };
+    }
 });
 
 
@@ -131,14 +126,14 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.ru-icon-video').click(function(event) {
         $('.roads-modal').fadeIn(500);
-        $('body').addClass('modal-open')
+        $('body').addClass('modal-open');
         event.stopPropagation();
 
     });
 
     $('.close-modal').click(function(event) {
         $('.roads-modal').fadeOut(500);
-        $('body').removeClass('modal-open')
+        $('body').removeClass('modal-open');
     });
 
 });
