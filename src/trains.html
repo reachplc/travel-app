@@ -23,7 +23,7 @@
 <head>
   <meta charset = "utf-8">
   <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
-  <title>Roads | MEN Traffic And Travel</title>
+  <title>Trains | MEN Traffic And Travel</title>
   <meta name = "description" content = "">
   <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
@@ -41,9 +41,9 @@
     <div class="menu__wrap">
       <nav class="main__nav">
         <ul>
-          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-bus">Buses</span></button></li>
+          <!--<li><button class="menu-btn"><span class="tt-icon menu-icon icon-bus">Buses</span></button></li>
           <li><button class="menu-btn"><span class="tt-icon menu-icon icon-metro">Metro</span></button></li>
-          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-planes">Planes</span></button></li>
+          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-planes">Planes</span></button></li>-->
           <li><button class="menu-btn"><span class="tt-icon menu-icon icon-trains">Trains</span></button></li>
           <li><button class="menu-btn"><span class="tt-icon menu-icon icon-roads">Roads</span></button></li>
         </ul>
@@ -62,20 +62,32 @@
 
   <div class="refresh-menu cf">
     <nav class="order-items">
-      <li id="time"><span class="order-icon order-active"></span>Time</li>
-      <li id="severity"><span class="order-icon"></span>Severity</li>
+      <li id="time"><span class="order-icon order-active"></span>Platform</li>
+      <li id="severity"><span class="order-icon"></span>Due Time</li>
     </nav>
   </div>
 
   <section id="train-news" class="train-times cf">
+  <form class="clear cf">
+  <div class="departure-field">
+    <label for="departure">Departure</label>
+    <input type="text" name="departure" id="departure" value="" tabindex="1">
+  </div>
+  <div class="destination-field">
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" id="destination" value="" tabindex="2">
+  </div>
+
+  <button type="submit" class="train-select"></button>
+  </form>
      <table cellpadding="0" cellspacing="0" border="1">
 <thead>
   <tr>
-    <th width="10%">Due</th>
-    <th width="45%" class="destination">Destination</th>
-    <th width="32%">Status</th>
-    <th width="10%">Plat</th>
-    <th width="3%"></th>
+    <th width="15%"><span class="trains-menu-icon due-icon"></span>Due</th>
+    <th width="40%"><span class="trains-menu-icon destination-icon"></span>Destination</th>
+    <th width="26%"><span class="trains-menu-icon train-status-icon"></span>Status</th>
+    <th width="17%"><span class="trains-menu-icon platform-icon"></span>Plat</th>
+    <th width="2%"></th>
   </tr>
 </thead>
 <tbody>
@@ -256,13 +268,14 @@
 </tbody>
 </table>
 
-  </section>
+  </section><!-- end section -->
 </div> <!-- tt__wrapper -->
 
 <!-- For jQuery CDN -->
 <script src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <!-- Custom jQuery -->
+
 <script src = "static/js/travelapp.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

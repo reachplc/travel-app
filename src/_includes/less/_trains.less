@@ -1,114 +1,228 @@
 /* =============================================================================
 Trains Elements - Layout
 ========================================================================== */
-
-
-
-
 /*  =====================================================
 
   Trains Main Table List
 
 =====================================================*/
-
 .train-times {
-  overflow:hidden;
+  overflow: hidden;
 }
-
-
-.train-times tr td{
+.train-times tr td {
   border: none;
   padding: 5px 5px 15px;
-  color:@greyXDark;
-  font-size:1.1em;
+  color: #494949;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.train-times tbody tr {
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -ms-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -o-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: linear-gradient(top, #ffffff, #e7e7e7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ffffff', endcolorstr='#e7e7e7', GradientType=0);
+  border-top: solid 2px #dfdfdf;
+}
+.train-times tbody tr:first-child {
+  border-top: none;
+  }
+.train-times thead tr {
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+.train-times thead tr th {
+  text-align: left;
+  padding: 20px 5px;
+  font-size: 1.2em;
   font-weight:700;
 }
 
-.train-times tbody tr {
-#GradientGrey > .vertical;
-  border-bottom:solid 2px @grey;
-
-}
-
-.train-times thead tr {
-  background-color:@greyDark;
-  color:@white;
-}
-
-.train-times thead tr th {
-  text-align: left;
-  padding: 20px 10px;
-  font-size: 1.3em;
+.train-times thead tr th:nth-child(1) {
+  padding-left:10px;
 }
 
 .train-times .status-minor-delay td:first-child {
   border-left: solid 8px #ff8b00;
   padding-left: 5px;
 }
-
 .train-times .status-minor-delay:nth-child(3) {
- color:#ff8b00;
+  color: #ff8b00;
 }
-
-
 .train-times .status-severe-delay td:first-child {
   border-left: solid 8px #ed1c24;
   padding-left: 5px;
 }
-
 .train-times .status-severe-delay:nth-child(3) {
- color:#ed1c24;
+  color: #ed1c24;
 }
-
 .train-times tr td:nth-child(4) {
- font-weight:400;
+  font-weight: 400;
 }
-
-.trains-drop{
+.trains-drop {
   position: relative;
-  display:block;
+  display: block;
   top: 8px;
   background-image: url(../gui/expand-icon.svg);
   width: 23px;
   height: 23px;
 }
-
-.train-times tbody .train-social{
-  background-color:@grey;
-  background-image:none;
-  display:none;
+.train-times tbody .train-social {
+  background-color: #e7e7e7;
+  background-image: none;
+  border-top:none;
+  display: none;
 }
-
-.train-times tbody .train-social .social-icons{
-  margin-top:10px;
+.train-times tbody .train-social .social-icons {
+  margin-top: 10px;
 }
-
-.train-times .drop-active{
-   background-position: -27px 0;
+.train-times .drop-active {
+  background-position: -27px 0;
 }
-
- @media screen and (min-width: 481px) {
-
+@media screen and (min-width: 481px) {
   .train-times tr td {
-    font-size:1.3em;
+    font-size: 1.3em;
     padding: 5px 20px 15px;
   }
-
   .train-times thead tr th {
     text-align: left;
-    padding: 20px 20px;
-    font-size: 1.5em;
+    padding: 15px 5px 20px 15px;
+    font-size: 1.4em;
   }
-
   .train-times .status-minor-delay td:first-child {
     border-left: solid 16px #ff8b00;
     padding-left: 15px;
   }
-
   .train-times .status-severe-delay td:first-child {
     border-left: solid 16px #ed1c24;
     padding-left: 15px;
   }
+}
 
 
- }
+ /* ==========================================================================
+   Trains
+   ========================================================================== */
+
+.trains-menu-icon{
+  display:none;
+  background-image: url(../gui/menu-icons/sprite_icon_trains_menu_icons.svg);
+    background-repeat: no-repeat;
+  background-size: 400%;
+  width:22px;
+  height:22px;
+  position: relative;
+}
+.due-icon{
+  background-position:0 0;
+  top: 4px;
+}
+
+.destination-icon{
+  background-position:-22px 0;
+  top: 4px;
+}
+
+.train-status-icon{
+  background-position:-44px 0;
+  top: 4px;
+}
+
+.platform-icon{
+  background-position:-66px 0;
+  top: 4px;
+}
+
+@media screen and (min-width: 481px) {
+  .trains-menu-icon {
+    display:inline-block;
+  }
+
+  .train-times tr td:nth-child(5){
+    padding:10px 15px 15px 5px
+  }
+}
+
+.train-times form{
+  background-color:#6b6b6b;
+}
+
+.departure-field, .destination-field{
+  width:43%;
+  float:left;
+  padding:15px 0 0 10px;
+}
+
+.train-select{
+  width:10%;
+  height:25px;
+  background-image: url(../gui/menu-icons/sprite_icon_trains_form_icon.svg);
+  background-repeat:no-repeat;
+  border:none;
+  background-color:transparent;
+  background-size:25px;
+  margin-top: 42px;
+  background-position:center center;
+  margin-left:2%;
+}
+
+.train-times form label{
+  float:left;
+  color:#fff;
+  padding-bottom:5px;
+  font-weight: 700;
+}
+
+.train-times form input{
+  float:left;
+  width:100%;
+  padding: 5px;
+  background-color:#333;
+  color:#e7e7e7;
+  font-weight: 400;
+  border: solid 1px #222;
+}
+
+.train-times form label, .train-times form input{
+  font-size: 1.1em;
+}
+
+.train-times tr td:nth-child(1){
+padding-left:10px;
+}
+
+
+
+@media screen and (min-width: 481px) {
+
+  .departure-field, .destination-field{
+  width:43%;
+  float:left;
+  padding:15px 0 0 15px;
+}
+
+.train-times thead tr th:nth-child(1) {
+padding-left:20px;
+}
+
+  .train-times tr td:nth-child(1) {
+padding-left: 23px;
+}
+
+  .train-times form label{
+  font-size:1.4em;
+}
+
+.train-times form input{
+  font-size:1.2em;
+}
+
+.train-select{
+  margin-top:50px;
+}
+
+}

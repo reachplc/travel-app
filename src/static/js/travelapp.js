@@ -1,14 +1,15 @@
 /**
  * Trinity Mirror Travel App
+ Copyright 2014 Trinity Mirrot
  */
 
 /*global $:false */
 
 var tmTravelApp = tmTravelApp || {};
 
-/**
+/** ===================================================================
  * Open Order Menu
- */
+ =================================================================== */
 
 $(document).ready(function() {
     $('#order-menu-btn').click(function(event) {
@@ -31,11 +32,11 @@ $(document).ready(function() {
 });
 
 
-/**
+/** ===================================================================
  * Social Media Roads Dropdown JS
- */
+ =================================================================== */
 
-$(document).ready(function() {
+$(document).ready(function(e) {
 
     $('.road-status-menu > li').addClass("li-active");
     $('.road-status-menu').on('click', '.li-active', function(e) {
@@ -46,6 +47,16 @@ $(document).ready(function() {
         var checkElement = $(this).find('.ru-social');
         var thisElement = $(this);
         checkHandle(checkElement, thisElement);
+
+    });
+
+    $('.road-status-menu').on('click', '.entry-fade', function(e) {
+        $('.road-status-menu li').find('.ru-social').slideUp('fast');
+        $('.road-status-menu > li').removeClass("li-active");
+        $('.road-status-menu > li').removeClass("entry-fade");
+        $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
+        $('.road-status-menu > li').addClass("li-active");
+
 
     });
 
@@ -67,14 +78,16 @@ $(document).ready(function() {
             $(thisElement).closest('li').removeClass("entry-fade");
             $(thisElement).closest('li').addClass("li-active");
 
+
         }
+
+
     };
 });
 
-
-/**
+/** ===================================================================
  * Social Media Train Dropdown JS
- */
+ =================================================================== */
 
 $(document).ready(function() {
 
@@ -108,4 +121,24 @@ $(document).ready(function() {
             $(thisElements).addClass("li-active");
         }
     };
+});
+
+
+/* =====================================================================
+ * Camera Modal
+ * ====================================================================*/
+
+$(document).ready(function() {
+    $('.ru-icon-video').click(function(event) {
+        $('.roads-modal').fadeIn(500);
+        $('body').addClass('modal-open')
+        event.stopPropagation();
+
+    });
+
+    $('.close-modal').click(function(event) {
+        $('.roads-modal').fadeOut(500);
+        $('body').removeClass('modal-open')
+    });
+
 });
