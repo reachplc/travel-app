@@ -17,7 +17,7 @@
 .main__nav ul li {
   float:left;
   margin-right:10px;
-  height:60px;
+  height:50px;
 }
 
 .menu-btn{
@@ -25,7 +25,6 @@
   border:none;
   margin:0;
   padding:0;
-  opacity:.75;
   transition: all .3s;
 }
 
@@ -35,6 +34,10 @@
   overflow: hidden;
 }
 
+.menu-btn:focus{
+  outline:none;
+}
+
 /* ==================================================================
 
 Main Menu Icons
@@ -42,6 +45,7 @@ Main Menu Icons
 ===================================================================*/
 
 .tt-icon{
+  background-color:#750418;
   display: inline-block;
   width:50px;
   height:50px;
@@ -59,7 +63,7 @@ Main Menu Icons
 .menu-icon{
   background-image:url(../gui/menu-icons/sprite_icon_mainmenu.svg);
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 670%;
 }
 
 .icon-bus{
@@ -75,11 +79,11 @@ Main Menu Icons
 }
 
 .icon-trains{
-  background-position: -5px -205px;
+  background-position: -13px -15px;
 }
 
 .icon-roads{
-  background-position: -5px -268px;
+  background-position: -73px -15px;
 }
 
 
@@ -96,7 +100,7 @@ Refresh / Order Icons
 .refresh__nav ul li {
   float:left;
   margin-left:10px;
-  height:60px;
+  height:50px;
 }
 
 .refresh__nav ul li a{
@@ -116,20 +120,21 @@ Refresh / Order Icons
   background-repeat: no-repeat;
   opacity:1;
   background-size: 230%;
+  border:none;
 }
 
 .icon-refresh{
-  background-position: -4px -11px;
+  background-position: -4px -12px;
 
 }
 
 .icon-order{
-  background-position: -4px -73px;
+  background-position: -5px -79px;
   transition: all .3s ease;
 }
 
 .icon-order-active{
-  background-position: -52px -73px !important;
+  background-position: -57px -79px !important;
 }
 
 
