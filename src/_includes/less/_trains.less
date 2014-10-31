@@ -15,6 +15,7 @@ Trains Elements - Layout
   color: #494949;
   font-size: 1.1em;
   font-weight: 700;
+  text-align: left;
 }
 .train-times tbody tr {
   background-color: #f5f5f5;
@@ -70,23 +71,16 @@ Trains Elements - Layout
   background-image: url(../gui/expand-icon.svg);
   width: 23px;
   height: 23px;
+  float: right;
 }
-.train-times tbody .train-social {
-  background-color: #e7e7e7;
-  background-image: none;
-  border-top:none;
-  display: none;
-}
-.train-times tbody .train-social .social-icons {
-  margin-top: 10px;
-}
+
 .train-times .drop-active {
   background-position: -27px 0;
 }
 @media screen and (min-width: 481px) {
   .train-times tr td {
     font-size: 1.3em;
-    padding: 5px 20px 15px;
+    padding: 15px 20px 15px;
   }
   .train-times thead tr th {
     text-align: left;
@@ -195,6 +189,62 @@ Trains Elements - Layout
 padding-left:10px;
 }
 
+
+ /* ==========================================================================
+   INFO MODAL WHERE TRAIN IS
+   ========================================================================== */
+
+
+.train-times tr td.startdeparted {
+background: transparent url(../gui/bg-live-progress-start-departed.png) top left no-repeat;
+vertical-align: middle;
+text-align: left;
+padding: 11px 11px 11px 0;
+}
+
+.train-times tr td div.current span {
+background: transparent url(../gui/bg-live-progress-current.png) center left no-repeat;
+padding-left: 36px;
+text-align: center;
+display: block;
+padding-right: 10px;
+width:20px;
+height:20px;
+}
+
+.train-times tr td.departed {
+background: transparent url(../gui/bg-live-progress-departed.gif) center left repeat-y;
+vertical-align: middle;
+text-align: left;
+padding: 11px 11px 11px 0;
+}
+
+.train-times tr td.progress {
+background: transparent url(../gui/bg-live-progress.gif) center left repeat-y;
+vertical-align: middle;
+text-align: left;
+padding: 11px 0;
+}
+
+.train-times tr td.end {
+background: transparent url(../gui/bg-live-progress-end.png) bottom left no-repeat;
+vertical-align: middle;
+text-align: left;
+padding: 11px 11px 11px 0;
+}
+
+ /* ==========================================================================
+   INFO MODAL WHERE TRAIN IS
+   ========================================================================== */
+
+.trains-modal .social-icons{
+  display:inline-block;
+    margin:0 auto;
+}
+
+.trains-modal .social-icons span {
+  margin: 10px
+}
 
 
 @media screen and (min-width: 481px) {

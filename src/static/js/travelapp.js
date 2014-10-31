@@ -52,8 +52,8 @@ $(document).ready(function(e) {
 
     $('.road-status-menu').on('click', '.entry-fade', function(e) {
         $('.road-status-menu li').find('.ru-social').slideUp('fast');
-        $('.road-status-menu > li').removeClass("li-active");
-        $('.road-status-menu > li').removeClass("entry-fade");
+        $('.road-status-menu > li').removeClass('li-active');
+        $('.road-status-menu > li').removeClass('entry-fade');
         $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
         $('.road-status-menu > li').addClass('li-active');
 
@@ -81,58 +81,21 @@ $(document).ready(function(e) {
     }
 });
 
-/** ===================================================================
- * Social Media Train Dropdown JS
- =================================================================== */
-
-$(document).ready(function() {
-
-    $('.train-info').addClass("li-active");
-    $('#train-news').on('click', '.li-active', function(e) {
-        $('.train-info').addClass('entry-fade');
-        $('.train-info').removeClass('li-active');
-
-        e.preventDefault();
-        var checkElements = $(this).next('tr');
-        var thisElements = $(this);
-        checkHandlers(checkElements, thisElements);
-    });
-
-    function checkHandlers(checkElements, thisElements) {
-
-        $('.train-info').closest('tr').find('.train-social').slideUp('fast');
-        $('.train-info').find('.trains-drop').removeClass('drop-active');
-
-        if ((checkElements.is('.train-social')) && (checkElements.is(':visible'))) {
-            checkElements.slideUp('fast');
-            $('.train-info').removeClass('entry-fade');
-            $('.train-info').addClass('li-active');
-        }
-
-        if ((checkElements.is('.train-social')) && (!checkElements.is(':visible'))) {
-            checkElements.slideDown('fast');
-            $(thisElements).find('.trains-drop').addClass('drop-active');
-            $(thisElements).removeClass('entry-fade');
-            $(thisElements).addClass('li-active');
-        }
-    }
-});
-
 
 /* =====================================================================
  * Camera Modal
  * ====================================================================*/
 
 $(document).ready(function() {
-    $('.ru-icon-video').click(function(event) {
-        $('.roads-modal').fadeIn(500);
+    $('.ru-icon-video, .train-info').click(function(event) {
+        $('.traffic-modal').fadeIn(500);
         $('body').addClass('modal-open');
         event.stopPropagation();
 
     });
 
     $('.close-modal').click(function(event) {
-        $('.roads-modal').fadeOut(500);
+        $('.traffic-modal').fadeOut(500);
         $('body').removeClass('modal-open');
     });
 
