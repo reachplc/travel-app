@@ -1,0 +1,200 @@
+/* ====================================================================
+
+   Main Menu
+
+=======================================================================
+ */
+
+
+.main__nav{
+  float:left;
+}
+
+.main__nav ul, .refresh__nav ul, .road-status ul{
+  list-style-type: none;
+}
+
+.main__nav ul li {
+  float:left;
+  margin-right:10px;
+  height:50px;
+}
+
+.menu-btn{
+  background-color:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+  transition: all .3s;
+}
+
+.menu-btn span{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-btn:focus{
+  outline:none;
+}
+
+/* ==================================================================
+
+Main Menu Icons
+
+===================================================================*/
+
+.tt-icon{
+  background-color:#750418;
+  display: inline-block;
+  width:50px;
+  height:50px;
+  border:2px solid #fff;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+
+}
+
+.menu-btn:hover{
+  opacity:1;
+}
+
+.menu-icon{
+  background-image:url(../gui/menu-icons/sprite_icon_mainmenu.svg);
+  background-repeat: no-repeat;
+  background-size: 670%;
+}
+
+.icon-bus{
+  background-position: -6px -14px;
+}
+
+.icon-metro{
+  background-position: -6px -93px;
+}
+
+.icon-planes{
+  background-position: -6px -168px;
+}
+
+.icon-trains{
+  background-position: -13px -15px;
+}
+
+.icon-roads{
+  background-position: -73px -15px;
+}
+
+
+/* ==================================================================
+
+Refresh / Order Icons
+
+===================================================================*/
+
+.refresh__nav{
+  float:right;
+}
+
+.refresh__nav ul li {
+  float:left;
+  margin-left:10px;
+  height:50px;
+}
+
+.refresh__nav ul li a{
+  height:60px;
+}
+
+.refresh__nav ul li:first-child {
+  margin-right:0px;
+}
+
+.refresh__nav ul li a{
+  display:block;
+}
+
+.refresh-icon{
+  background-image:url(../gui/menu-icons/sprite_icon_refreshmenu.svg);
+  background-repeat: no-repeat;
+  opacity:1;
+  background-size: 230%;
+  border:none;
+}
+
+.icon-refresh{
+  background-position: -4px -12px;
+
+}
+
+.icon-order{
+  background-position: -5px -79px;
+  transition: all .3s ease;
+}
+
+.icon-order-active{
+  background-position: -57px -79px !important;
+}
+
+
+/* ==================================================================
+
+Order Menu Dropdown
+
+===================================================================*/
+
+.refresh-menu{
+  width:100%;
+  background-color: @greyMed;
+  height:0;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+}
+
+.refresh-menu .order-items li{
+  display:block;
+  font-weight: 700;
+  border-bottom:solid 1px #a3a3a1;
+}
+
+.refresh-menu .order-items li{
+  display:block;
+  color:@white;
+  font-size:1.2em;
+  line-height: 1.8em;
+  padding:10px 30px;
+  width:100%;
+  height:50px;
+  cursor:pointer;
+}
+
+.refresh-menu-active{
+ display:block;
+ height:100px;
+ clear: both;
+}
+
+.refresh-menu .order-items li a:hover{
+  background-color:#c2c2c2;
+}
+
+.refresh-menu .order-icon{
+  display: block;
+  width:28px;
+  height:28px;
+  float:left;
+  background-image:url(../gui/menu-icons/sprite_icon_ordermenu.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-right:15px;
+}
+
+.order-active{
+  background-position: -55px 0 !important;
+}
+
+
+

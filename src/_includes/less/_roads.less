@@ -1,0 +1,535 @@
+/* =============================================================================
+Buses Elements - Layout
+========================================================================== */
+
+
+* {
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+
+.cf:before, .cf:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  =====================================================
+
+  Wrapper
+
+=====================================================*/
+
+.tt__wrapper ul{
+  margin:0; padding:0;
+  background-color:#000;
+}
+
+.tt__wrapper ::selection {
+  background: #c8c8c8; /* WebKit/Blink Browsers */
+}
+.tt__wrapper ::-moz-selection {
+  background: #c8c8c8; /* Gecko Browsers */
+}
+
+.tt__wrapper{
+  display:block;
+	max-width:950px;
+  margin: 0 auto;
+  color: @textColour;
+  line-height: @baseLineHeight;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+}
+
+@media screen and (min-width: 481px) {
+  .tt__wrapper{
+  margin: 20px auto;
+  }
+}
+
+/*  =====================================================
+
+Road Update Section
+
+===================================================== */
+
+.tt-entry{
+  display:block;
+  #GradientGrey > .vertical;
+  position:relative;
+  opacity:1;
+  transition: all .2s ease;
+}
+
+#road-news, .road-status-menu{
+  display:block;
+}
+
+.entry-fade{
+  background-color: rgb(255,255,255);
+  opacity:0.5;
+
+}
+
+.in-shadow{
+  position:absolute;
+  z-index:1;
+  .innershadow;
+  height:10px;
+  width:100%;
+
+}
+
+/*  =====================================================
+
+Global Road Update Icons
+
+===================================================== */
+
+.ru-icon {
+  position:absolute;
+  height:100%;
+  width:80px;
+  background-color:@grey;
+  left:0;
+}
+
+.status-icon{
+  background-image:url(../gui/status-icons/sprite_icon_status.svg);
+  background-size: 500%;
+  background-repeat: no-repeat;
+  width:80px;
+  height:90px;
+  margin: 10px auto 0 auto;
+}
+
+.severity-high .ru-icon{
+  background-position: 5px 5px;
+  border-right:solid 8pt @severity5;
+}
+
+.severity-med .ru-icon{
+  background-position: -66px 5px;
+  border-right:solid 8pt @severity4;
+}
+
+.severity-low .ru-icon{
+  background-position: -135px 5px;
+  border-right:solid 8pt @severity3;
+}
+
+.severity-cleared .ru-icon{
+  background-position: -277px 5px;
+  border-right:solid 8pt @severity1;
+}
+
+.special-event .ru-icon{
+  background-position: -205px 5px;
+  border-right:solid 8pt @eventsWarning;
+}
+
+.road-closed .ru-icon{
+  background-position: 6px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+.accident .ru-icon{
+  background-position: -68px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+.lane-closure .ru-icon{
+  background-position: -275px -80px;
+  border-right:solid 8pt @severity5;
+}
+
+@media screen and (min-width: 481px) {
+
+.ru-icon {
+  width:100px;
+}
+
+.status-icon{
+  background-size: 400%;
+  min-height: 90px;
+}
+
+.severity-high .ru-icon{
+  background-position: 15px -1px;
+  border-right:solid 8pt @severity5;
+}
+
+.severity-med .ru-icon{
+  background-position: -60px -1px;
+  border-right:solid 8pt @severity4;
+}
+
+.severity-low .ru-icon{
+  background-position: -132px 1px;
+  border-right:solid 8pt @severity3;
+}
+
+.severity-cleared .ru-icon{
+  background-position: -278px 2px;
+  border-right:solid 8pt @severity1;;
+}
+
+.special-event .ru-icon{
+  background-position: -202px 2px;
+  border-right:solid 8pt @eventsWarning;
+}
+
+.road-closed .ru-icon{
+  background-position: 15px -87px;
+  border-right:solid 8pt @severity5;
+}
+
+.accident .ru-icon{
+  background-position: -60px -85px;
+  border-right:solid 8pt @severity5;
+}
+
+.lane-closure .ru-icon{
+  background-position: -274px -87px;
+  border-right:solid 8pt @severity4;
+}
+
+}
+
+
+/* =====================================================
+
+ Road Update Deatils
+
+ ===================================================== */
+
+.ru-details{
+  margin-left: 80px;
+  padding:5px 20px;
+}
+
+.ru-details h3{
+  font-size:1.1em;
+  font-weight:700;
+  line-height:1.1em;
+  padding-bottom:5px;
+  color:@greyXDark;
+}
+
+@media screen and (min-width: 481px) {
+
+  .ru-details{
+    padding:10px 20px;
+  }
+
+  .ru-details h3 {
+    font-size: 1.3em;
+  }
+
+}
+
+.ru-details p{
+  font-size:1.1em;
+  padding-bottom: 0.5em
+}
+
+.ru-area{
+  position:relative;
+  margin:10px 0 5px;
+  padding: 5px 40px 5px 0;
+}
+
+.ru-area-drop{
+  position: absolute;
+  background-image: url(../gui/expand-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}
+
+.severity-high .drop-active{
+   background-position: -27px 0;
+}
+
+.severity-med .drop-active{
+   background-position: -55px 0;
+}
+
+.severity-low .drop-active{
+   background-position: -81px 0;
+}
+
+.severity-cleared .drop-active{
+   background-position: -132px 0;
+}
+
+.special-event .drop-active{
+   background-position: -106px 0;
+}
+
+.road-closed .drop-active{
+   background-position: -27px 0;
+}
+
+.accident .drop-active{
+   background-position: -27px 0;
+}
+
+.lane-closure .drop-active{
+   background-position: -27px 0;
+}
+
+/* =====================================================
+
+ Roads Entry Update Top Bar
+
+ ===================================================== */
+
+.ru-top-bar{
+  display:block;
+  width:100%;
+  #GradientGrey > .horizontal;
+  margin: 10px 0 5px;
+}
+
+.ru-top-bar .road-name{
+  position:relative;
+  min-width:80px;
+  display:inline-block;
+  height:28px;
+}
+
+.ru-top-bar .clock-icon{
+  display:block;
+  background-image:url(../gui/clock-icon.svg);
+  background-repeat: no-repeat;
+  height:16px;
+  width:16px;
+  float:right;
+  margin:6px;
+}
+
+
+.ru-top-bar .ru-time-text{
+ float:right;
+ margin-left:10px;
+ font-weight:700;
+ margin:6px;
+}
+
+
+@media screen and (min-width: 481px) {
+  .ru-details{
+    margin-left: 100px;
+  }
+}
+
+.road-name:before{
+  content:'';
+  top:0;
+  right:-28px;
+  position: absolute;
+  width:0;
+  height:0;
+}
+
+/* =====================================================
+
+Severity High Classes
+
+===================================================== */
+
+.severity-high .road-name:before, .road-closed .road-name:before, .accident .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity5;
+  border-bottom:solid 14px @severity5;
+}
+
+.severity-high .ru-top-bar h2, .road-closed .ru-top-bar h2, .accident .ru-top-bar h2, .lane-closure .ru-top-bar h2{
+  background-color:@severity5;
+  padding:2px 8px 1px 8px;
+}
+
+
+/* =====================================================
+
+Severity Medium Classes
+
+===================================================== */
+
+.severity-med .road-name:before, .lane-closure .road-name:before,{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity4;
+  border-bottom:solid 14px @severity4;
+}
+
+.severity-med .ru-top-bar h2, .lane-closure .ru-top-bar h2{
+  background-color:@severity4;
+  padding:2px 8px 1px 8px;
+}
+
+/* =====================================================
+
+Severity Low Classes
+
+===================================================== */
+
+.severity-low .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity3;
+  border-bottom:solid 14px @severity3;
+}
+
+.severity-low .ru-top-bar h2{
+  background-color:@severity3;
+  padding:2px 8px 1px 8px;
+}
+
+
+
+/* =====================================================
+
+Severity Low Cleared
+
+===================================================== */
+
+.severity-cleared .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @severity1;
+  border-bottom:solid 14px @severity1;
+}
+
+.severity-cleared .ru-top-bar h2{
+  background-color:@severity1;
+  padding:2px 8px 1px 8px;
+}
+
+/* Severity Low Cleared */
+
+.special-event .road-name:before{
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left:solid 14px @eventsWarning;
+  border-bottom:solid 14px @eventsWarning;
+}
+
+.special-event .ru-top-bar h2{
+  background-color:@eventsWarning;
+  padding:2px 8px 1px 8px;
+}
+
+
+
+/* =====================================================
+
+Social Buttons
+
+====================================================== */
+
+.ru-video{
+  display:block;
+  float:left;
+  margin-top:20px;
+}
+
+.s-icon{
+  display:block;
+  float:left;
+  width:42px;
+  height:42px;
+  background-image:url(../gui/menu-icons/sprite_icon_social_icons.svg);
+  border:2px solid #6B6B6B;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  cursor: pointer;
+  transition: all .3s ease;
+  background-color: @white;
+}
+
+.ru-social{
+  display:block;
+  position: relative;
+  display:none;
+ margin-bottom:20px;
+}
+
+.ru-social-active{
+  display:block;
+  overflow:visible;
+  height: 120px;
+}
+
+.social-icons{
+  display:block;
+  margin-top:20px;
+  float:left;
+}
+
+.social-icons span{
+  margin-right:4px;
+}
+
+@media screen and (min-width: 481px) {
+
+  .social-icons{
+    float:right;
+}
+
+  .social-icons span{
+    margin-left: 20px;
+  }
+}
+
+.ru-icon-video{
+  background-position:-12px -13px;
+  margin-right:5px;
+}
+
+.ru-icon-video:hover{
+  background-position:-12px -53px;
+}
+
+.ru-icon-email{
+  background-position:-77px -14px;
+}
+
+.ru-icon-email:hover{
+  background-position:-77px -55px;
+}
+
+.ru-icon-twitter{
+  background-position:-143px -12px;
+}
+
+.ru-icon-twitter:hover{
+  background-position:-143px -53px;
+}
+
+.ru-icon-facebook{
+  background-position:-208px -12px;
+}
+
+.ru-icon-facebook:hover{
+  background-position:-208px -54px;
+}
+
+
+.ru-icon-google{
+  background-position:-273px -12px;
+}
+
+.ru-icon-google:hover{
+  background-position:-273px -52px;
+}

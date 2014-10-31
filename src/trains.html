@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class = "no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+
+<!--[if IE 7]>
+<html class = "no-js lt-ie9 lt-ie8">
+
+<![endif]-->
+
+<!--[if lte IE 7]>
+<script src = "js/lte-ie7.min.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<html class = "no-js lt-ie9">
+
+<![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html class = "no-js">
+<!--<![endif]-->
+
+<head>
+<meta charset = "utf-8">
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+<title>Trains | MEN Traffic And Travel</title>
+<meta name = "description" content = "">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link href = "http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel = "stylesheet" href = "static/css/travel.css">
+</head>
+
+
+<body>
+<div class="tt__wrapper cf">
+<div class="header cf">
+  <div class="menu__wrap">
+    <nav class="main__nav">
+      <ul>
+        <!--<li><button class="menu-btn"><span class="tt-icon menu-icon icon-bus">Buses</span></button></li>
+          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-metro">Metro</span></button></li>
+          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-planes">Planes</span></button></li>-->
+        <li>
+          <button class="menu-btn"><span class="tt-icon menu-icon icon-trains">Trains</span></button>
+        </li>
+        <li>
+          <button class="menu-btn"><span class="tt-icon menu-icon icon-roads">Roads</span></button>
+        </li>
+      </ul>
+    </nav>
+    <!-- menu__nav -->
+  </div>
+  <!-- menu__wrap -->
+
+  <div class="refresh__wrap">
+    <nav class="refresh__nav">
+      <ul>
+        <li><a href="#"><span class="tt-icon refresh-icon icon-refresh"></span></a></li>
+        <li><a id="order-menu-btn"><span class="tt-icon refresh-icon icon-order"></span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- refresh__wrap -->
+</div>
+<!-- div header -->
+
+<div class="refresh-menu cf">
+  <nav class="order-items">
+    <li id="time"><span class="order-icon order-active"></span>Platform</li>
+    <li id="severity"><span class="order-icon"></span>Due Time</li>
+  </nav>
+</div>
+<section id="train-news" class="train-times cf">
+  <form class="clear cf">
+    <div class="departure-field">
+      <label for="departure">Departure</label>
+      <input type="text" name="departure" id="departure" value="" tabindex="1">
+    </div>
+    <div class="destination-field">
+      <label for="destination">Destination</label>
+      <input type="text" name="destination" id="destination" value="" tabindex="2">
+    </div>
+    <button type="submit" class="train-select"></button>
+  </form>
+  <table cellpadding="0" cellspacing="0" border="1">
+    <thead>
+      <tr>
+        <th width="15%"><span class="trains-menu-icon due-icon"></span>Due</th>
+        <th width="40%"><span class="trains-menu-icon destination-icon"></span>Destination</th>
+        <th width="26%"><span class="trains-menu-icon train-status-icon"></span>Status</th>
+        <th width="17%"><span class="trains-menu-icon platform-icon"></span>Plat</th>
+        <th width="2%">Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="train-info status-minor-delay">
+        <td class="status">09:15</td>
+        <td class="destination">Blackpool</td>
+        <td class="status status-minor-delay">09:20 <br>
+          <span class="unbold">5 <abbr title="minutes">mins </abbr>late</span></td>
+        <td>8A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info status-minor-delay">
+        <td class="status status-minor-delay">09:17</td>
+        <td class="destination">Plymouth</td>
+        <td class="status status-minor-delay">09:20 <br>
+          <span class="unbold">3 <abbr title="minutes">mins</abbr> late</span></td>
+        <td>12</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:19</td>
+        <td class="destination">Nottingham</td>
+        <td class="status">On time</td>
+        <td>10A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:22</td>
+        <td class="destination">Stansted Airport</td>
+        <td class="status">On time</td>
+        <td>12A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:23</td>
+        <td class="destination">Holyhead</td>
+        <td class="status">On time</td>
+        <td>6B</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:23</td>
+        <td class="destination">Longbridge</td>
+        <td class="status">On time</td>
+        <td>11B</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info status-severe-delay">
+        <td class="status">09:25</td>
+        <td class="destination">Lichfield City</td>
+        <td class="status status-severe-delay">09:35<br>
+          <span>10 <abbr title="minutes">mins</abbr> late</span></td>
+        <td>7A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:27</td>
+        <td class="destination">Walsall</td>
+        <td class="status">On time</td>
+        <td>2A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:30</td>
+        <td class="destination">Cardiff Central via Gloucester</td>
+        <td class="status">On time</td>
+        <td>10B</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:30</td>
+        <td class="destination">London Euston</td>
+        <td class="status">On time</td>
+        <td>4</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:30</td>
+        <td class="destination">Newcastle via Doncaster</td>
+        <td class="status">On time</td>
+        <td>8A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:31</td>
+        <td class="destination">Manchester Piccadilly via Stoke-on-Trent</td>
+        <td class="status">On time</td>
+        <td>5M</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:33</td>
+        <td class="destination">London Euston</td>
+        <td class="status">On time</td>
+        <td>2</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:33</td>
+        <td class="destination">Longbridge</td>
+        <td class="status">On time</td>
+        <td>11B</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:33</td>
+        <td class="destination">Reading</td>
+        <td class="status">On time</td>
+        <td>10A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info status-minor-delay">
+        <td class="status status-minor-delay">09:35</td>
+        <td class="destination"> Lichfield Trent Valley</td>
+        <td class="status status-minor-delay">09:37<br>
+          <span class="unbold">2 <abbr title="minutes">mins</abbr> late</span></td>
+        <td>8A</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+      <tr class="train-info">
+        <td>09:36</td>
+        <td class="destination"> Birmingham International </td>
+        <td class="status">On time</td>
+        <td>1B</td>
+        <td><span class="trains-drop"></span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<!-- end section -->
+
+<div class="traffic-modal trains-modal modal fade" id="roadsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="traffic-container">
+
+        <div class="train-times">
+          <div class="header cf">
+            <h2>Manchester Piccadilly - Blackpool</h2>
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+          </div>
+          <table cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th width="15%"><span class="trains-menu-icon due-icon"></span>Due</th>
+                <th width="40%"><span class="trains-menu-icon destination-icon"></span>Destination</th>
+                <th width="26%"><span class="trains-menu-icon train-status-icon"></span>Status</th>
+                <th width="17%"><span class="trains-menu-icon platform-icon"></span>Plat</th>
+                <th width="2%"><span class="hidden">Loc </span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="departed alt first ">
+                <td>14:29</td>
+                <td class="station"> Manchester Airport </td>
+                <td><span>Departed</span> <br>
+                  <span class="unbold">2 mins late</span></td>
+                <td></td>
+                <td class="startdeparted"></td>
+              </tr>
+              <tr class="train-info">
+                <td class="status">14:33</td>
+                <td class="station"> Heald Green </td>
+                <td><span>Departed</span> <br>
+                  <span class="unbold">2 mins late</span></td>
+                <td></td>
+                <td class="departed"></td>
+              </tr>
+              <tr class="train-info">
+                <td class="status">14:46</td>
+                <td class="station"> Manchester Piccadilly </td>
+                <td><span>Departed</span> <br>
+                  <span class="unbold">3 mins late</span></td>
+                <td>14</td>
+                <td class="departed"></td>
+              </tr>
+              <tr class="train-info">
+                <td>14:48</td>
+                <td class="station"> Manchester Oxford Road </td>
+                <td><span>Departed</span> <br>
+                  <span class="unbold">3 mins late</span></td>
+                <td></td>
+                <td class="departed"></td>
+              </tr>
+              <tr class="alt ">
+                <td>14:51</td>
+                <td class="station"> Deansgate </td>
+                <td><span>14:53</span> <br>
+                  <span class="unbold">2 mins late</span></td>
+                <td></td>
+                <td class="progress inmotion"><div class="current"><span></span> </div></td>
+              </tr>
+              <tr class="">
+                <td>14:56</td>
+                <td class="station"> Salford Crescent </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="alt ">
+                <td>15:06</td>
+                <td class="station"> Bolton </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="">
+                <td>15:13</td>
+                <td class="station"> Horwich Parkway </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="alt ">
+                <td>15:20</td>
+                <td class="station"> Chorley </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="">
+                <td>15:24</td>
+                <td class="station"> Buckshaw Parkway </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="alt ">
+                <td>15:33</td>
+                <td class="station"> Preston (Lancs) </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="">
+                <td>15:52</td>
+                <td class="station"> Poulton-le-Fylde </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="progress"></td>
+              </tr>
+              <tr class="alt last ">
+                <td>16:02</td>
+                <td class="station"> Blackpool North </td>
+                <td><span>On time</span> <br>
+                  <span class="unbold"></span></td>
+                <td></td>
+                <td class="end"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="social-icons"><span class="s-icon ru-icon-email"></span><span class="s-icon ru-icon-twitter"></span><span class="s-icon ru-icon-facebook"></span><span class="s-icon ru-icon-google"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- tt__wrapper -->
+
+<!-- For jQuery CDN -->
+<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Custom jQuery -->
+
+<script src = "static/js/travelapp.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!-- <script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script> -->
+
+</body>
+</html>
