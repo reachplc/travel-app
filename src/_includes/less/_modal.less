@@ -4,12 +4,6 @@ header
 
 /*  Header  */
 
-/* =============================================================================
-header
-========================================================================== */
-
-/*  Header  */
-
 .traffic-container {
     width: 100%;
     max-width: 950px;
@@ -132,9 +126,11 @@ header
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
 .modal:focus{
   outline: none;
 }
+
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
@@ -143,20 +139,24 @@ header
        -o-transform: translate3d(0, -25%, 0);
           transform: translate3d(0, -25%, 0);
 }
+
 .modal.in .modal-dialog {
   -webkit-transform: translate3d(0, 0, 0);
        -o-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .modal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
+
 .modal-content {
   position: relative;
   -webkit-background-clip: padding-box;
@@ -170,6 +170,7 @@ header
   -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -179,14 +180,17 @@ header
   z-index: 1040;
   background-color: #000;
 }
+
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
   opacity: 0;
 }
+
 .modal-backdrop.in {
   filter: alpha(opacity=50);
   opacity: .5;
 }
+
 .modal-header {
   min-height: 16.42857143px;
   padding: 15px;
@@ -195,29 +199,36 @@ header
 .modal-header .close {
   margin-top: -2px;
 }
+
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 }
+
 .modal-body {
   position: relative;
   padding: 15px;
 }
+
 .modal-footer {
   padding: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
+
 .modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
+
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
+
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -225,6 +236,7 @@ header
   height: 50px;
   overflow: scroll;
 }
+
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
@@ -239,6 +251,7 @@ header
     width: 300px;
   }
 }
+
 @media (min-width: 992px) {
   .modal-lg {
     width: 900px;
