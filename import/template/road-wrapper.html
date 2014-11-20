@@ -1,0 +1,48 @@
+<div class="header cf">
+  <div class="menu__wrap">
+    <nav class="main__nav">
+      <ul>
+        <!--<li><button class="menu-btn"><span class="tt-icon menu-icon icon-bus">Buses</span></button></li>
+          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-metro">Metro</span></button></li>
+          <li><button class="menu-btn"><span class="tt-icon menu-icon icon-planes">Planes</span></button></li>-->
+        <li>
+          <button class="menu-btn"><span class="tt-icon menu-icon icon-trains">Trains</span></button>
+        </li>
+        <li>
+          <button class="menu-btn"><span class="tt-icon menu-icon icon-roads">Roads</span></button>
+        </li>
+      </ul>
+    </nav>
+    <!-- menu__nav -->
+  </div>
+  <!-- menu__wrap -->
+
+  <div class="refresh__wrap">
+    <nav class="refresh__nav">
+      <ul>
+        <li><a href="#"><span class="tt-icon refresh-icon icon-refresh"></span></a></li>
+        <li><a id="order-menu-btn"><span class="tt-icon refresh-icon icon-order"></span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- refresh__wrap -->
+</div>
+<!-- div header -->
+
+<div class="refresh-menu cf">
+  <nav class="order-items">
+    <li id="time"><span class="order-icon order-active"></span>Time</li>
+    <li id="severity"><span class="order-icon"></span>Severity</li>
+  </nav>
+</div>
+<section id="road-news" class="cf">
+  <div class="road-status cf">
+    <ul class="road-status-menu cf">
+		{{roaditems}}
+    </ul>
+  </div>
+</section>
+
+
+
+{{modals}}

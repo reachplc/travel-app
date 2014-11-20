@@ -1,0 +1,1505 @@
+#trafficntravelvis input[type="checkbox"],
+#trafficntravelvis input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  behavior: url("/css/PIE.htc");
+}
+#trafficntravelvis .visuallyhidden,
+legend,
+input[type="checkbox"],
+input[type="radio"],
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+}
+#trafficntravelvis .visuallyhidden.focusable:active,
+#trafficntravelvis .visuallyhidden.focusable:focus,
+body,
+figure,
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+#trafficntravelvis .ir,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+#trafficntravelvis video {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
+}
+#trafficntravelvis fieldset {
+  border: 1px solid #efefef;
+}
+#trafficntravelvis .visuallyhidden,
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+}
+#trafficntravelvis audio:not([controls]),
+[hidden] {
+  display: none;
+}
+#trafficntravelvis .visuallyhidden.focusable:active,
+#trafficntravelvis .visuallyhidden.focusable:focus {
+  overflow: visible;
+}
+#trafficntravelvis .visuallyhidden,
+#trafficntravelvis .ir,
+#trafficntravelvis svg:not(:root) {
+  overflow: hidden;
+}
+#trafficntravelvis .visuallyhidden {
+  position: absolute;
+}
+sub,
+#trafficntravelvis sup {
+  position: relative;
+}
+#trafficntravelvis .visuallyhidden.focusable:active,
+#trafficntravelvis .visuallyhidden.focusable:focus {
+  position: static;
+}
+/* =============================================================================
+header
+========================================================================== */
+/*  Header  */
+#trafficntravelvis .tt__wrapper .header {
+  padding: 10px 15px;
+  background-color: #94000c;
+  background-image: -moz-linear-gradient(top, #86000b, #a8000e);
+  background-image: -ms-linear-gradient(top, #86000b, #a8000e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#86000b), to(#a8000e));
+  background-image: -webkit-linear-gradient(top, #86000b, #a8000e);
+  background-image: -o-linear-gradient(top, #86000b, #a8000e);
+  background-image: linear-gradient(top, #86000b, #a8000e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#86000b', endcolorstr='#a8000e', GradientType=0);
+  width: 100%;
+  float: left;
+  position: relative;
+}
+/* ====================================================================
+
+   Main Menu
+
+=======================================================================
+ */
+#trafficntravelvis .main__nav {
+  float: left;
+}
+#trafficntravelvisv .main__nav ul,
+#trafficntravelvis .refresh__nav ul,
+#trafficntravelvis .road-status ul {
+  list-style-type: none;
+}
+#trafficntravelvis .main__nav ul li {
+  float: left;
+  margin-right: 10px;
+  height: 50px;
+}
+#trafficntravelvis .menu-btn {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: all .3s;
+}
+#trafficntravelvis .menu-btn span {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#trafficntravelvis .menu-btn:focus {
+  outline: none;
+}
+/* ==================================================================
+
+Main Menu Icons
+
+===================================================================*/
+#trafficntravelvis .tt-icon {
+  background-color: #750418;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+#trafficntravelvis .menu-btn:hover {
+  opacity: 1;
+}
+#trafficntravelvis .menu-icon {
+  background-image: url(gui/menu-icons/sprite_icon_mainmenu.svg);
+  background-repeat: no-repeat;
+  background-size: 670%;
+}
+#trafficntravelvis .icon-bus {
+  background-position: -6px -14px;
+}
+#trafficntravelvis .icon-metro {
+  background-position: -6px -93px;
+}
+#trafficntravelvis.icon-planes {
+  background-position: -6px -168px;
+}
+#trafficntravelvis .icon-trains {
+  background-position: -13px -15px;
+}
+#trafficntravelvis .icon-roads {
+  background-position: -73px -15px;
+}
+/* ==================================================================
+
+Refresh / Order Icons
+
+===================================================================*/
+#trafficntravelvis .refresh__nav {
+  float: right;
+}
+#trafficntravelvis .refresh__nav ul li {
+  float: left;
+  margin-left: 10px;
+  height: 50px;
+}
+#trafficntravelvis .refresh__nav ul li a {
+  height: 60px;
+}
+#trafficntravelvis .refresh__nav ul li:first-child {
+  margin-right: 0px;
+}
+#trafficntravelvis .refresh__nav ul li a {
+  display: block;
+}
+#trafficntravelvis .refresh-icon {
+  background-image: url(gui/menu-icons/sprite_icon_refreshmenu.svg);
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-size: 230%;
+  border: none;
+}
+#trafficntravelvis .icon-refresh {
+  background-position: -4px -12px;
+}
+#trafficntravelvis .icon-order {
+  background-position: -5px -79px;
+  transition: all .3s ease;
+}
+#trafficntravelvis .icon-order-active {
+  background-position: -57px -79px !important;
+}
+/* ==================================================================
+
+Order Menu Dropdown
+
+===================================================================*/
+#trafficntravelvis  .refresh-menu {
+  width: 100%;
+  background-color: #bababa;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+}
+#trafficntravelvis  .refresh-menu .order-items li {
+  display: block;
+  font-weight: 700;
+  border-bottom: solid 1px #a3a3a1;
+}
+#trafficntravelvis  .refresh-menu .order-items li {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 10px 30px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+#trafficntravelvis  .refresh-menu-active {
+  display: block;
+  height: 100px;
+  clear: both;
+}
+#trafficntravelvis .refresh-menu .order-items li a:hover {
+  background-color: #c2c2c2;
+}
+#trafficntravelvis .refresh-menu .order-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-image: url(gui/menu-icons/sprite_icon_ordermenu.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+#trafficntravelvis .order-active {
+  background-position: -55px 0 !important;
+}
+/* =============================================================================
+Typography
+========================================================================== */
+#trafficntravelvis p {
+  line-height: 1.4;
+  padding-bottom: 1em;
+}
+/* Type */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+#trafficntravelvis h6 {
+  font-size: 1.43em;
+}
+#trafficntravelvis h6.title {
+  font-size: 2.76095238em;
+}
+#trafficntravelvis h5 {
+  font-size: 1.64666667em;
+}
+#trafficntravelvis h5.title {
+  font-size: 2.86412698em;
+}
+#trafficntravelvis h4 {
+  font-size: 1.86333333em;
+}
+#trafficntravelvis h4.title {
+  font-size: 2.96730159em;
+}
+#trafficntravelvis h3 {
+  font-size: 2.08em;
+}
+#trafficntravelvis h3.title {
+  font-size: 3.07047619em;
+}
+#trafficntravelvis h2 {
+  font-size: 2.29666667em;
+}
+#trafficntravelvis h2.title {
+  font-size: 3.17365079em;
+}
+#trafficntravelvis h1 {
+  font-size: 2.51333333em;
+}
+#trafficntravelvis h1.title {
+  font-size: 3.2768254em;
+}
+#trafficntravelvis a {
+  color: #a8000e;
+  text-decoration: none;
+}
+#trafficntravelvis a:hover {
+  color: #5c0008;
+}
+/* Heading Classes */
+#trafficntravelvis .beta {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #ffffff;
+  font-weight: 700;
+}
+/* =============================================================================
+Buses Elements - Layout
+========================================================================== */
+#trafficntravelvis  * {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+#trafficntravelvis .cf:before,
+#trafficntravelvis .cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*  =====================================================
+
+  Wrapper
+
+=====================================================*/
+#trafficntravelvis .tt__wrapper ul {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+#trafficntravelvis .tt__wrapper ::selection {
+  background: #c8c8c8;
+  /* WebKit/Blink Browsers */
+}
+#trafficntravelvis .tt__wrapper ::-moz-selection {
+  background: #c8c8c8;
+  /* Gecko Browsers */
+}
+#trafficntravelvis .tt__wrapper {
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
+  color: #494949;
+  line-height: 1.4;
+  font-family: "PT Sans", "sans-serif", "arial";
+  font-size: 81.25%;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .tt__wrapper {
+    margin: 20px auto;
+  }
+}
+/*  =====================================================
+
+Road Update Section
+
+===================================================== */
+#trafficntravelvis .tt-entry {
+  display: block;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -ms-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -o-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: linear-gradient(top, #ffffff, #e7e7e7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ffffff', endcolorstr='#e7e7e7', GradientType=0);
+  position: relative;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 0px;
+}
+#road-news,
+#trafficntravelvis .road-status-menu {
+  display: block;
+}
+#trafficntravelvis .entry-fade {
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+#trafficntravelvis .in-shadow {
+  position: absolute;
+  z-index: 1;
+  -webkit-box-shadow: inset 0px 10px 8px -8px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: inset 0px 10px 8px -8px rgba(50, 50, 50, 0.3);
+  box-shadow: inset 0px 10px 8px -8px rgba(50, 50, 50, 0.3);
+  height: 10px;
+  width: 100%;
+}
+/*  =====================================================
+
+Global Road Update Icons
+
+===================================================== */
+#trafficntravelvis .ru-icon {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  background-color: #dfdfdf;
+  left: 0;
+}
+#trafficntravelvis .status-icon {
+  background-image: url(gui/status-icons/sprite_icon_status.svg);
+  background-size: 500%;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 90px;
+  margin: 10px auto 0 auto;
+}
+#trafficntravelvis .severity-high .ru-icon {
+  background-position: 5px 5px;
+  border-right: solid 8pt #ed1c24;
+}
+#trafficntravelvis .severity-med .ru-icon {
+  background-position: -66px 5px;
+  border-right: solid 8pt #ff8b00;
+}
+#trafficntravelvis .severity-low .ru-icon {
+  background-position: -135px 5px;
+  border-right: solid 8pt #fbc934;
+}
+#trafficntravelvis .severity-cleared .ru-icon {
+  background-position: -277px 5px;
+  border-right: solid 8pt #00a900;
+}
+#trafficntravelvis .special-event .ru-icon {
+  background-position: -205px 5px;
+  border-right: solid 8pt #007adf;
+}
+#trafficntravelvis .road-closed .ru-icon {
+  background-position: 6px -80px;
+  border-right: solid 8pt #ed1c24;
+}
+
+#trafficntravelvis .road-works .ru-icon {
+  background-position: -203px -87px;
+  border-right: solid 8pt #ed1c24;
+}
+#trafficntravelvis .incidents .ru-icon {
+  background-position: -132px -87px;
+  border-right: solid 8pt #ed1c24;
+}
+#trafficntravelvis .accident .ru-icon {
+  background-position: -68px -80px;
+  border-right: solid 8pt #ed1c24;
+}
+#trafficntravelvis .lane-closure .ru-icon {
+  background-position: -275px -80px;
+  border-right: solid 8pt #ed1c24;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .ru-icon {
+    width: 100px;
+  }
+  #trafficntravelvis .status-icon {
+    background-size: 400%;
+    min-height: 90px;
+  }
+  #trafficntravelvis .severity-high .ru-icon {
+    background-position: 15px -1px;
+    border-right: solid 8pt #ed1c24;
+  }
+  #trafficntravelvis .severity-med .ru-icon {
+    background-position: -60px -1px;
+    border-right: solid 8pt #ff8b00;
+  }
+  #trafficntravelvis .severity-low .ru-icon {
+    background-position: -132px 1px;
+    border-right: solid 8pt #fbc934;
+  }
+  #trafficntravelvis .severity-cleared .ru-icon {
+    background-position: -278px 2px;
+    border-right: solid 8pt #00a900;
+  }
+  #trafficntravelvis .special-event .ru-icon {
+    background-position: -202px 2px;
+    border-right: solid 8pt #007adf;
+  }
+  #trafficntravelvis .road-closed .ru-icon {
+    background-position: 15px -87px;
+    border-right: solid 8pt #ed1c24;
+  }
+  #trafficntravelvis .accident .ru-icon {
+    background-position: -60px -85px;
+    border-right: solid 8pt #ed1c24;
+  }
+  #trafficntravelvis .lane-closure .ru-icon {
+    background-position: -274px -87px;
+    border-right: solid 8pt #ff8b00;
+  }
+}
+/* =====================================================
+
+ Road Update Deatils
+
+ ===================================================== */
+#trafficntravelvis .ru-details {
+  margin-left: 80px;
+  padding: 5px 20px;
+}
+#trafficntravelvis .ru-details h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  padding-bottom: 5px;
+  color: #494949;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .ru-details {
+    padding: 10px 20px;
+  }
+  #trafficntravelvis .ru-details h3 {
+    font-size: 1.3em;
+  }
+}
+#trafficntravelvis .ru-details p {
+  font-size: 1.1em;
+  padding-bottom: 0.5em;
+}
+#trafficntravelvis .ru-area {
+  position: relative;
+  margin: 10px 0 5px;
+  padding: 5px 40px 5px 0;
+}
+#trafficntravelvis .ru-area-drop {
+  position: absolute;
+  background-image: url(gui/expand-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}
+#trafficntravelvis .severity-high .drop-active {
+  background-position: -27px 0;
+}
+#trafficntravelvis .severity-med .drop-active {
+  background-position: -55px 0;
+}
+#trafficntravelvis .severity-low .drop-active {
+  background-position: -81px 0;
+}
+#trafficntravelvis .severity-cleared .drop-active {
+  background-position: -132px 0;
+}
+#trafficntravelvis .special-event .drop-active {
+  background-position: -106px 0;
+}
+#trafficntravelvis .road-closed .drop-active {
+  background-position: -27px 0;
+}
+#trafficntravelvis .accident .drop-active {
+  background-position: -27px 0;
+}
+#trafficntravelvis .lane-closure .drop-active {
+  background-position: -27px 0;
+}
+/* =====================================================
+
+ Roads Entry Update Top Bar
+
+ ===================================================== */
+#trafficntravelvis .ru-top-bar {
+  display: block;
+  width: 100%;
+  background-color: #dfdfdf;
+  background-image: -moz-linear-gradient(left, #efefef, #dfdfdf);
+  background-image: -ms-linear-gradient(left, #efefef, #dfdfdf);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#efefef), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(left, #efefef, #dfdfdf);
+  background-image: -o-linear-gradient(left, #efefef, #dfdfdf);
+  background-image: linear-gradient(left, #efefef, #dfdfdf);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#efefef', endcolorstr='#dfdfdf', GradientType=1);
+  margin: 10px 0 5px;
+}
+#trafficntravelvis .ru-top-bar .road-name {
+  border: 0px;
+  margin: 0px;
+  padding-top: 0px;
+  position: relative;
+  min-width: 80px;
+  display: inline-block;
+  height: 28px;
+}
+#trafficntravelvis .ru-top-bar .clock-icon {
+  display: block;
+  background-image: url(gui/clock-icon.svg);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  float: right;
+  margin: 6px;
+}
+#trafficntravelvis .ru-top-bar .ru-time-text {
+  float: right;
+  margin-left: 10px;
+  font-weight: 700;
+  margin: 6px;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .ru-details {
+    margin-left: 100px;
+  }
+}
+#trafficntravelvis .road-name:before {
+  content: '';
+  top: 0;
+  right: -28px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+}
+/* =====================================================
+
+Severity High Classes
+
+===================================================== */
+#trafficntravelvis .severity-high .road-name:before,
+#trafficntravelvis .road-closed .road-name:before,
+#trafficntravelvis .road-works .road-name:before,
+#trafficntravelvis .incidents .road-name:before,
+#trafficntravelvis .accident .road-name:before {
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left: solid 14px #ed1c24;
+  border-bottom: solid 14px #ed1c24;
+}
+#trafficntravelvis .severity-high .ru-top-bar h2,
+#trafficntravelvis .road-closed .ru-top-bar h2,
+#trafficntravelvis .road-works .ru-top-bar h2,
+#trafficntravelvis .incidents .ru-top-bar h2,
+#trafficntravelvis .accident .ru-top-bar h2,
+#trafficntravelvis .lane-closure .ru-top-bar h2 {
+  background-color: #ed1c24;
+  padding: 2px 8px 1px 8px;
+}
+/* =====================================================
+
+Severity Medium Classes
+
+===================================================== */
+#trafficntravelvis .severity-med .road-name:before,
+#trafficntravelvis .lane-closure .road-name:before {
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left: solid 14px #ff8b00;
+  border-bottom: solid 14px #ff8b00;
+}
+#trafficntravelvis .severity-med .ru-top-bar h2,
+#trafficntravelvis .lane-closure .ru-top-bar h2 {
+  background-color: #ff8b00;
+  padding: 2px 8px 1px 8px;
+}
+/* =====================================================
+
+Severity Low Classes
+
+===================================================== */
+#trafficntravelvis .severity-low .road-name:before {
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left: solid 14px #fbc934;
+  border-bottom: solid 14px #fbc934;
+}
+#trafficntravelvis .severity-low .ru-top-bar h2 {
+  background-color: #fbc934;
+  padding: 2px 8px 1px 8px;
+}
+/* =====================================================
+
+Severity Low Cleared
+
+===================================================== */
+#trafficntravelvis .severity-cleared .road-name:before {
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left: solid 14px #00a900;
+  border-bottom: solid 14px #00a900;
+}
+#trafficntravelvis .severity-cleared .ru-top-bar h2 {
+  background-color: #00a900;
+  padding: 2px 8px 1px 8px;
+}
+/* Severity Low Cleared */
+#trafficntravelvis .special-event .road-name:before {
+  border-top: solid 14px transparent;
+  border-right: solid 14px transparent;
+  border-left: solid 14px #007adf;
+  border-bottom: solid 14px #007adf;
+}
+#trafficntravelvis .special-event .ru-top-bar h2 {
+  background-color: #007adf;
+  padding: 2px 8px 1px 8px;
+}
+/* =====================================================
+
+Social Buttons
+
+====================================================== */
+#trafficntravelvis .ru-video {
+  display: block;
+  float: left;
+  margin-top: 20px;
+}
+#trafficntravelvis .s-icon {
+  display: block;
+  float: left;
+  width: 42px;
+  height: 42px;
+  background-image: url(gui/menu-icons/sprite_icon_social_icons.svg);
+  border: 2px solid #6B6B6B;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  cursor: pointer;
+  transition: all .3s ease;
+  background-color: #ffffff;
+}
+#trafficntravelvis .ru-social {
+  display: block;
+  position: relative;
+  display: none;
+  margin-bottom: 20px;
+}
+#trafficntravelvis .ru-social-active {
+  display: block;
+  overflow: visible;
+  height: 120px;
+}
+#trafficntravelvis .social-icons {
+  display: block;
+  margin-top: 20px;
+  float: left;
+}
+#trafficntravelvis .social-icons span {
+  margin-right: 4px;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .social-icons {
+    float: right;
+  }
+  #trafficntravelvis .social-icons span {
+    margin-left: 20px;
+  }
+}
+#trafficntravelvis .ru-icon-video {
+  background-position: -12px -13px;
+  margin-right: 5px;
+}
+#trafficntravelvis .ru-icon-video:hover {
+  background-position: -12px -53px;
+}
+#trafficntravelvis .ru-icon-email {
+  background-position: -77px -14px;
+}
+#trafficntravelvis .ru-icon-email:hover {
+  background-position: -77px -55px;
+}
+#trafficntravelvis .ru-icon-twitter {
+  background-position: -143px -12px;
+}
+#trafficntravelvis .ru-icon-twitter:hover {
+  background-position: -143px -53px;
+}
+#trafficntravelvis .ru-icon-facebook {
+  background-position: -208px -12px;
+}
+#trafficntravelvis .ru-icon-facebook:hover {
+  background-position: -208px -54px;
+}
+#trafficntravelvis .ru-icon-google {
+  background-position: -273px -12px;
+}
+#trafficntravelvis .ru-icon-google:hover {
+  background-position: -273px -52px;
+}
+/* =============================================================================
+Trains Elements - Layout
+========================================================================== */
+/*  =====================================================
+
+  Trains Main Table List
+
+=====================================================*/
+#trafficntravelvis .train-times {
+  overflow: hidden;
+}
+#trafficntravelvis .train-times tr td {
+  border: none;
+  padding: 5px 5px 15px;
+  color: #494949;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: left;
+}
+#trafficntravelvis .train-times tbody tr {
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -ms-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: -o-linear-gradient(top, #ffffff, #e7e7e7);
+  background-image: linear-gradient(top, #ffffff, #e7e7e7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ffffff', endcolorstr='#e7e7e7', GradientType=0);
+  border-top: solid 2px #dfdfdf;
+}
+#trafficntravelvis .train-times tbody tr:first-child {
+  border-top: none;
+}
+#trafficntravelvis .train-times thead tr {
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+#trafficntravelvis .train-times thead tr th {
+  text-align: left;
+  padding: 20px 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#trafficntravelvis .train-times thead tr th:nth-child(1) {
+  padding-left: 10px;
+}
+#trafficntravelvis .train-times .status-minor-delay td:first-child {
+  border-left: solid 8px #ff8b00;
+  padding-left: 5px;
+}
+#trafficntravelvis .train-times .status-minor-delay:nth-child(3) {
+  color: #ff8b00;
+}
+#trafficntravelvis .train-times .status-severe-delay td:first-child {
+  border-left: solid 8px #ed1c24;
+  padding-left: 5px;
+}
+#trafficntravelvis .train-times .status-severe-delay:nth-child(3) {
+  color: #ed1c24;
+}
+#trafficntravelvis .train-times tr td:nth-child(4) {
+  font-weight: 400;
+}
+#trafficntravelvis .trains-drop {
+  position: relative;
+  display: block;
+  top: 8px;
+  background-image: url(gui/expand-icon.svg);
+  width: 23px;
+  height: 23px;
+  float: right;
+}
+#trafficntravelvis .train-times .drop-active {
+  background-position: -27px 0;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis .train-times tr td {
+    font-size: 1.3em;
+    padding: 15px 20px 15px;
+  }
+  #trafficntravelvis .train-times thead tr th {
+    text-align: left;
+    padding: 15px 5px 20px 15px;
+    font-size: 1.4em;
+  }
+  #trafficntravelvis .train-times .status-minor-delay td:first-child {
+    border-left: solid 16px #ff8b00;
+    padding-left: 15px;
+  }
+  #trafficntravelvis .train-times .status-severe-delay td:first-child {
+    border-left: solid 16px #ed1c24;
+    padding-left: 15px;
+  }
+}
+/* ==========================================================================
+   Trains
+   ========================================================================== */
+#trafficntravelvis .trains-menu-icon {
+  display: none;
+  background-image: url(gui/menu-icons/sprite_icon_trains_menu_icons.svg);
+  background-repeat: no-repeat;
+  background-size: 400%;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+#trafficntravelvis .due-icon {
+  background-position: 0 0;
+  top: 4px;
+}
+#trafficntravelvis .destination-icon {
+  background-position: -22px 0;
+  top: 4px;
+}
+#trafficntravelvis .train-status-icon {
+  background-position: -44px 0;
+  top: 4px;
+}
+#trafficntravelvis .platform-icon {
+  background-position: -66px 0;
+  top: 4px;
+}
+@media screen and (min-width: 481px) {
+ #trafficntravelvis .trains-menu-icon {
+    display: inline-block;
+  }
+  #trafficntravelvis.train-times tr td:nth-child(5) {
+    padding: 10px 15px 15px 5px;
+  }
+}
+#trafficntravelvis.train-times form {
+  background-color: #6b6b6b;
+}
+#trafficntravelvis.departure-field,
+.destination-field {
+  width: 43%;
+  float: left;
+  padding: 15px 0 0 10px;
+}
+#trafficntravelvis.train-select {
+  width: 10%;
+  height: 25px;
+  background-image: url(gui/menu-icons/sprite_icon_trains_form_icon.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-size: 25px;
+  margin-top: 42px;
+  background-position: center center;
+  margin-left: 2%;
+}
+#trafficntravelvis.train-times form label {
+  float: left;
+  color: #fff;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+#trafficntravelvis.train-times form input {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  background-color: #333;
+  color: #e7e7e7;
+  font-weight: 400;
+  border: solid 1px #222;
+}
+#trafficntravelvis.train-times form label,
+.train-times form input {
+  font-size: 1.1em;
+}
+#trafficntravelvis.train-times tr td:nth-child(1) {
+  padding-left: 10px;
+}
+/* ==========================================================================
+   INFO MODAL WHERE TRAIN IS
+   ========================================================================== */
+#trafficntravelvis.train-times tr td.startdeparted {
+  background: transparent url(gui/bg-live-progress-start-departed.png) top left no-repeat;
+  vertical-align: middle;
+  text-align: left;
+  padding: 11px 11px 11px 0;
+}
+#trafficntravelvis.train-times tr td div.current span {
+  background: transparent url(gui/bg-live-progress-current.png) center left no-repeat;
+  padding-left: 36px;
+  text-align: center;
+  display: block;
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+#trafficntravelvis.train-times tr td.departed {
+  background: transparent url(gui/bg-live-progress-departed.gif) center left repeat-y;
+  vertical-align: middle;
+  text-align: left;
+  padding: 11px 11px 11px 0;
+}
+#trafficntravelvis.train-times tr td.progress {
+  background: transparent url(gui/bg-live-progress.gif) center left repeat-y;
+  vertical-align: middle;
+  text-align: left;
+  padding: 11px 0;
+}
+#trafficntravelvis.train-times tr td.end {
+  background: transparent url(gui/bg-live-progress-end.png) bottom left no-repeat;
+  vertical-align: middle;
+  text-align: left;
+  padding: 11px 11px 11px 0;
+}
+/* ==========================================================================
+   INFO MODAL WHERE TRAIN IS
+   ========================================================================== */
+#trafficntravelvis.trains-modal .social-icons {
+  display: inline-block;
+  margin: 0 auto;
+}
+#trafficntravelvis.trains-modal .social-icons span {
+  margin: 10px;
+}
+@media screen and (min-width: 481px) {
+  #trafficntravelvis.departure-field,
+  .destination-field {
+    width: 43%;
+    float: left;
+    padding: 15px 0 0 15px;
+  }
+  #trafficntravelvis.train-times thead tr th:nth-child(1) {
+    padding-left: 20px;
+  }
+  #trafficntravelvis.train-times tr td:nth-child(1) {
+    padding-left: 23px;
+  }
+  #trafficntravelvis.train-times form label {
+    font-size: 1.4em;
+  }
+  #trafficntravelvis.train-times form input {
+    font-size: 1.2em;
+  }
+  #trafficntravelvis.train-select {
+    margin-top: 50px;
+  }
+}
+
+/**
+ * Remove default margin.
+ */
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+#trafficntravelvis a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+#trafficntravelvis a:active,
+#trafficntravelvis a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font size within `section` and `article` contexts in
+ * Firefox 4+, Safari 5, and Chrome.
+ */
+#trafficntravelvis h1 {
+  font-size: 2em;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+#trafficntravelvis abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+#trafficntravelvis b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+#trafficntravelvis dfn {
+  font-style: italic;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+#trafficntravelvis mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+#trafficntravelvis code,
+kbd,
+pre,
+#trafficntravelvis samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+#trafficntravelvis pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/**
+ * Set consistent quote types.
+ */
+#trafficntravelvis q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+#trafficntravelvis small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+#trafficntravelvis sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+#trafficntravelvis sup {
+  top: -0.5em;
+}
+#trafficntravelvis sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+#trafficntravelvis img {
+  border: 0;
+  max-width: 100%;
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+#trafficntravelvis fieldset {
+  margin: 0 0.1em;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+#trafficntravelvis button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+#trafficntravelvis button,
+input {
+  line-height: normal;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+#trafficntravelvis button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+#trafficntravelvis button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+#trafficntravelvis input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  behavior: url("/css/PIE.htc");
+}
+#trafficntravelvis input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+#trafficntravelvis textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+#trafficntravelvis table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* =============================================================================
+header
+========================================================================== */
+/*  Header  */
+#trafficntravelvis .traffic-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+#trafficntravelvis .traffic-modal .modal-content {
+  padding: 60px 10px;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: "PT Sans", "sans-serif", "arial";
+}
+#trafficntravelvis .roads-modal .modal-content h2 {
+  font-size: 2em;
+  background-color: #3873bf;
+  color: #ffffff;
+  display: table;
+  margin: 20px auto;
+  padding: 25px 38px;
+  border: solid 5px #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+}
+#trafficntravelvis .traffic-modal .modal-content p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  max-width: 468px;
+  margin: 30px auto;
+}
+#trafficntravelvis .traffic-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "PT Sans", "sans-serif", "arial";
+  font-size: 16px;
+  font-style: italic;
+}
+#trafficntravelvis .traffic-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#trafficntravelvis .traffic-modal .modal-content img {
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+}
+#trafficntravelvis .traffic-modal .close-modal {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+#trafficntravelvis .traffic-modal .close-modal:hover {
+  opacity: .3;
+}
+#trafficntravelvis .traffic-modal .close-modal .lr {
+  z-index: 1052;
+  width: 36px;
+  height: 36px;
+}
+#trafficntravelvis .roads-modal .close-modal .lr {
+  background-image: url(gui/sprite_icon_roads_modal_close_icon.svg);
+}
+#trafficntravelvis .trains-modal .close-modal .lr {
+  background-image: url(gui/sprite_icon_modal_close_icon.svg);
+}
+#trafficntravelvis .trains-modal .modal-content {
+  padding-top: 0;
+}
+#trafficntravelvis .trains-modal .modal-content h2 {
+  font-size: 1.6em;
+  color: #ffffff;
+  margin: 7px 0;
+  text-align: left;
+  width: 80%;
+}
+@media (min-width: 481px) {
+  #trafficntravelvis .trains-modal .modal-content h2 {
+    margin: 7px 10px;
+  }
+}
+#trafficntravelvis .modal-content {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#trafficntravelvis .modal-open {
+  overflow: hidden;
+}
+#trafficntravelvis .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+#trafficntravelvis .modal:focus {
+  outline: none;
+}
+#trafficntravelvis .modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate3d(0, -25%, 0);
+  -o-transform: translate3d(0, -25%, 0);
+  transform: translate3d(0, -25%, 0);
+}
+#trafficntravelvis .modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#trafficntravelvis .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#trafficntravelvis .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+#trafficntravelvis .modal-content {
+  position: relative;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+#trafficntravelvis .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+#trafficntravelvis .modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+#trafficntravelvis .modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+#trafficntravelvis .modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#trafficntravelvis .modal-header .close {
+  margin-top: -2px;
+}
+#trafficntravelvis .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+#trafficntravelvis .modal-body {
+  position: relative;
+  padding: 15px;
+}
+#trafficntravelvis .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+#trafficntravelvis .modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+#trafficntravelvis .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+#trafficntravelvis .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+#trafficntravelvis .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  #trafficntravelvis .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  #trafficntravelvis .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  #trafficntravelvis .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  #trafficntravelvis .modal-lg {
+    width: 900px;
+  }
+}
+#trafficntravelvis .hide {
+	display: none;
+}

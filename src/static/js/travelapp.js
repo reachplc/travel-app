@@ -17,29 +17,34 @@ $(document).ready(function() {
         $('.refresh-menu').toggleClass('refresh-menu-active');
     });
 
-});
+
 
 /**
  * Roads Order Menu JS
  */
 
-$(document).ready(function() {
+
     $('.order-items > li ').click(function(event) {
         $('.order-items > li > span').attr('class', 'order-icon');
         $(this).find('span').addClass('order-active');
     });
 
-});
+
 
 
 /** ===================================================================
  * Social Media Roads Dropdown JS
  =================================================================== */
 
-$(document).ready(function(e) {
 
-    $('.road-status-menu > li').addClass('li-active');
+	console.log("ready!");
+	
+	console.log($(".li-active"));
+	
+	
+	
     $('.road-status-menu').on('click', '.li-active', function(e) {
+		console.log("li active clicked");
         $('.road-status-menu > li').addClass('entry-fade');
         $('.road-status-menu > li').removeClass('li-active');
 
@@ -51,6 +56,7 @@ $(document).ready(function(e) {
     });
 
     $('.road-status-menu').on('click', '.entry-fade', function(e) {
+		console.log("entry fade clicked clicked");
         $('.road-status-menu li').find('.ru-social').slideUp('fast');
         $('.road-status-menu > li').removeClass('li-active');
         $('.road-status-menu > li').removeClass('entry-fade');
@@ -79,16 +85,19 @@ $(document).ready(function(e) {
 
         }
     }
-});
+
 
 
 /* =====================================================================
  * Camera Modal
  * ====================================================================*/
 
-$(document).ready(function() {
+
     $('.ru-icon-video, .train-info').click(function(event) {
-        $('.traffic-modal').fadeIn(500);
+		console.log($(this).attr("data-id"));
+        $('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').fadeIn(500);
+		var httpurl = $('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').find(".img-responsive").attr("data-url");
+		$('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').find(".img-responsive").attr("src", httpurl);
         $('body').addClass('modal-open');
         event.stopPropagation();
 
