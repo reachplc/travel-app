@@ -1,6 +1,6 @@
 /**
  * Trinity Mirror Travel App
- Copyright 2014 Trinity Mirrot
+ Copyright 2014 Trinity Mirror
  */
 
 /*global $:false */
@@ -39,14 +39,12 @@ $(document).ready(function() {
 
 	console.log("ready!");
 	
-	console.log($(".li-active"));
+	$('#trafficntravelvis .road-status-menu > li').addClass('li-active');
 	
-	
-	
-    $('.road-status-menu').on('click', '.li-active', function(e) {
+    $('#trafficntravelvis .road-status-menu').on('click', '.li-active', function(e) {
 		console.log("li active clicked");
-        $('.road-status-menu > li').addClass('entry-fade');
-        $('.road-status-menu > li').removeClass('li-active');
+        $('#trafficntravelvis .road-status-menu > li').addClass('entry-fade');
+        $('#trafficntravelvis .road-status-menu > li').removeClass('li-active');
 
         e.preventDefault();
         var checkElement = $(this).find('.ru-social');
@@ -55,26 +53,26 @@ $(document).ready(function() {
 
     });
 
-    $('.road-status-menu').on('click', '.entry-fade', function(e) {
-		console.log("entry fade clicked clicked");
-        $('.road-status-menu li').find('.ru-social').slideUp('fast');
-        $('.road-status-menu > li').removeClass('li-active');
-        $('.road-status-menu > li').removeClass('entry-fade');
-        $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
-        $('.road-status-menu > li').addClass('li-active');
+    $('trafficntravelvis .road-status-menu').on('click', '.entry-fade', function(e) {
+		console.log("entry fade clicked");
+        $('#trafficntravelvis .road-status-menu li').find('.ru-social').slideUp('fast');
+        $('#trafficntravelvis .road-status-menu > li').removeClass('li-active');
+        $('#trafficntravelvis .road-status-menu > li').removeClass('entry-fade');
+        $('#trafficntravelvis .road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
+        $('#trafficntravelvis .road-status-menu > li').addClass('li-active');
 
     });
 
     function checkHandle(checkElement, thisElement) {
 
-        $('.road-status-menu li').find('.ru-social').slideUp('fast');
+        $('#trafficntravelvis .road-status-menu li').find('.ru-social').slideUp('fast');
 
-        $('.road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
+        $('#trafficntravelvis .road-status-menu li').find('.ru-area-drop').removeClass('drop-active');
 
         if ((checkElement.is('.ru-social')) && (checkElement.is(':visible'))) {
             checkElement.slideUp('fast');
-            $('.road-status-menu > li').removeClass('entry-fade');
-            $('.road-status-menu > li').addClass('li-active');
+            $('#trafficntravelvis .road-status-menu > li').removeClass('entry-fade');
+            $('#trafficntravelvis .road-status-menu > li').addClass('li-active');
         }
 
         if ((checkElement.is('.ru-social')) && (!checkElement.is(':visible'))) {
@@ -93,14 +91,13 @@ $(document).ready(function() {
  * ====================================================================*/
 
 
-    $('.ru-icon-video, .train-info').click(function(event) {
+    $('#trafficntravelvis .ru-icon-video, .train-info').click(function(event) {
+        event.stopPropagation();
 		console.log($(this).attr("data-id"));
         $('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').fadeIn(500);
 		var httpurl = $('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').find(".img-responsive").attr("data-url");
 		$('.traffic-modal[data-id="'+$(this).attr("data-id")+'"]').find(".img-responsive").attr("src", httpurl);
         $('body').addClass('modal-open');
-        event.stopPropagation();
-
     });
 
     $('.close-modal').click(function(event) {
@@ -108,4 +105,54 @@ $(document).ready(function() {
         $('body').removeClass('modal-open');
     });
 
+
+/* =====================================================================
+ * Facebook App
+ * ====================================================================*/
+
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '403153089840296',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+  $('#trafficntravelvis .social-icons .ru-icon-facebook').on('click', function() {
+    event.stopPropagation();
+        var msgShare = 'This is a test please to see if working';
+        FB.ui({
+            method: 'feed',
+            link: 'http://manchestereveningnews.co.uk/trafficandtravel',
+            name: document.title,
+            description: msgShare
+        }, function(response){});
+
+        return false;
+    });
+
+/* =====================================================================
+ * Twitter
+ * ====================================================================*/
+
+$('#trafficntravelvis .social-icons .ru-icon-twitter').on('click', function() {
+    event.stopPropagation();
+        var msgShare = 'This is a Traffic and Travel Twitter Test';
+        var w = 550;
+        var h = 420;
+        var winName = 'win'+String(Math.floor(100000*Math.random()));
+        var t = Math.floor((screen.height - h)/2 - 50);
+        var l = Math.floor((screen.width - w)/2);
+        window.open('https://twitter.com/share?related=manchestereveningnews&hashtags=trafficandtravel&text=' + encodeURIComponent(msgShare) + '&url=' + encodeURIComponent(window.location.href), winName, 'width='+w+',height='+h+',top='+t+',left='+l+',scrollbars=yes,resizable=yes,toolbar=no,location=no');
+        return false;
+    });
 });

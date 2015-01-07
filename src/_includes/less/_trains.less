@@ -6,10 +6,10 @@ Trains Elements - Layout
   Trains Main Table List
 
 =====================================================*/
-.train-times {
+#trafficntravelvis .train-times {
   overflow: hidden;
 }
-.train-times tr td {
+#trafficntravelvis .train-times tr td {
   border: none;
   padding: 5px 5px 15px;
   color: #494949;
@@ -17,7 +17,7 @@ Trains Elements - Layout
   font-weight: 700;
   text-align: left;
 }
-.train-times tbody tr {
+#trafficntravelvis .train-times tbody tr {
   background-color: #f5f5f5;
   background-image: -moz-linear-gradient(top, #ffffff, #e7e7e7);
   background-image: -ms-linear-gradient(top, #ffffff, #e7e7e7);
@@ -29,42 +29,47 @@ Trains Elements - Layout
   filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ffffff', endcolorstr='#e7e7e7', GradientType=0);
   border-top: solid 2px #dfdfdf;
 }
-.train-times tbody tr:first-child {
+#trafficntravelvis .train-times tbody tr:first-child {
   border-top: none;
   }
-.train-times thead tr {
+#trafficntravelvis .train-times thead tr {
   background-color: #6b6b6b;
   color: #ffffff;
 }
-.train-times thead tr th {
+#trafficntravelvis .train-times thead tr th {
   text-align: left;
   padding: 20px 5px;
   font-size: 1.2em;
   font-weight:700;
 }
 
-.train-times thead tr th:nth-child(1) {
+#trafficntravelvis .train-times thead tr th:nth-child(1) {
   padding-left:10px;
 }
 
-.train-times .status-minor-delay td:first-child {
+#trafficntravelvis .train-times .status-minor-delay td:first-child {
   border-left: solid 8px #ff8b00;
   padding-left: 5px;
 }
-.train-times .status-minor-delay:nth-child(3) {
+
+#trafficntravelvis .train-times .status-minor-delay:nth-child(3) {
   color: #ff8b00;
 }
-.train-times .status-severe-delay td:first-child {
+
+#trafficntravelvis .train-times .status-severe-delay td:first-child {
   border-left: solid 8px #ed1c24;
   padding-left: 5px;
 }
-.train-times .status-severe-delay:nth-child(3) {
+
+#trafficntravelvis .train-times .status-severe-delay:nth-child(3) {
   color: #ed1c24;
 }
-.train-times tr td:nth-child(4) {
+
+#trafficntravelvis .train-times tr td:nth-child(4) {
   font-weight: 400;
 }
-.trains-drop {
+
+#trafficntravelvis .trains-drop {
   position: relative;
   display: block;
   top: 8px;
@@ -74,24 +79,28 @@ Trains Elements - Layout
   float: right;
 }
 
-.train-times .drop-active {
+#trafficntravelvis .train-times .drop-active {
   background-position: -27px 0;
 }
+
 @media screen and (min-width: 481px) {
-  .train-times tr td {
+  #trafficntravelvis  .train-times tr td {
     font-size: 1.3em;
     padding: 15px 20px 15px;
   }
-  .train-times thead tr th {
+
+  #trafficntravelvis  .train-times thead tr th {
     text-align: left;
     padding: 15px 5px 20px 15px;
     font-size: 1.4em;
   }
-  .train-times .status-minor-delay td:first-child {
+
+  #trafficntravelvis  .train-times .status-minor-delay td:first-child {
     border-left: solid 16px #ff8b00;
     padding-left: 15px;
   }
-  .train-times .status-severe-delay td:first-child {
+
+  #trafficntravelvis  .train-times .status-severe-delay td:first-child {
     border-left: solid 16px #ed1c24;
     padding-left: 15px;
   }
@@ -102,7 +111,7 @@ Trains Elements - Layout
    Trains
    ========================================================================== */
 
-.trains-menu-icon{
+#trafficntravelvis  .trains-menu-icon{
   display:none;
   background-image: url(../gui/menu-icons/sprite_icon_trains_menu_icons.svg);
     background-repeat: no-repeat;
@@ -111,47 +120,48 @@ Trains Elements - Layout
   height:22px;
   position: relative;
 }
-.due-icon{
+
+#trafficntravelvis .due-icon{
   background-position:0 0;
   top: 4px;
 }
 
-.destination-icon{
+#trafficntravelvis .destination-icon{
   background-position:-22px 0;
   top: 4px;
 }
 
-.train-status-icon{
+#trafficntravelvis .train-status-icon{
   background-position:-44px 0;
   top: 4px;
 }
 
-.platform-icon{
+#trafficntravelvis .platform-icon{
   background-position:-66px 0;
   top: 4px;
 }
 
 @media screen and (min-width: 481px) {
-  .trains-menu-icon {
+  #trafficntravelvis .trains-menu-icon {
     display:inline-block;
   }
 
-  .train-times tr td:nth-child(5){
+  #trafficntravelvis .train-times tr td:nth-child(5){
     padding:10px 15px 15px 5px
   }
 }
 
-.train-times form{
+#trafficntravelvis .train-times form{
   background-color:#6b6b6b;
 }
 
-.departure-field, .destination-field{
+#trafficntravelvis .departure-field, #trafficntravelvis .destination-field{
   width:43%;
   float:left;
   padding:15px 0 0 10px;
 }
 
-.train-select{
+#trafficntravelvis .train-select{
   width:10%;
   height:25px;
   background-image: url(../gui/menu-icons/sprite_icon_trains_form_icon.svg);
@@ -164,14 +174,14 @@ Trains Elements - Layout
   margin-left:2%;
 }
 
-.train-times form label{
+#trafficntravelvis .train-times form label{
   float:left;
   color:#fff;
   padding-bottom:5px;
   font-weight: 700;
 }
 
-.train-times form input{
+#trafficntravelvis .train-times form input{
   float:left;
   width:100%;
   padding: 5px;
@@ -181,11 +191,11 @@ Trains Elements - Layout
   border: solid 1px #222;
 }
 
-.train-times form label, .train-times form input{
+#trafficntravelvis .train-times form label, #trafficntravelvis .train-times form input{
   font-size: 1.1em;
 }
 
-.train-times tr td:nth-child(1){
+#trafficntravelvis .train-times tr td:nth-child(1){
 padding-left:10px;
 }
 
@@ -195,14 +205,14 @@ padding-left:10px;
    ========================================================================== */
 
 
-.train-times tr td.startdeparted {
+#trafficntravelvis .train-times tr td.startdeparted {
 background: transparent url(../gui/bg-live-progress-start-departed.png) top left no-repeat;
 vertical-align: middle;
 text-align: left;
 padding: 11px 11px 11px 0;
 }
 
-.train-times tr td div.current span {
+#trafficntravelvis .train-times tr td div.current span {
 background: transparent url(../gui/bg-live-progress-current.png) center left no-repeat;
 padding-left: 36px;
 text-align: center;
@@ -212,21 +222,21 @@ width:20px;
 height:20px;
 }
 
-.train-times tr td.departed {
+#trafficntravelvis .train-times tr td.departed {
 background: transparent url(../gui/bg-live-progress-departed.gif) center left repeat-y;
 vertical-align: middle;
 text-align: left;
 padding: 11px 11px 11px 0;
 }
 
-.train-times tr td.progress {
+#trafficntravelvis .train-times tr td.progress {
 background: transparent url(../gui/bg-live-progress.gif) center left repeat-y;
 vertical-align: middle;
 text-align: left;
 padding: 11px 0;
 }
 
-.train-times tr td.end {
+#trafficntravelvis .train-times tr td.end {
 background: transparent url(../gui/bg-live-progress-end.png) bottom left no-repeat;
 vertical-align: middle;
 text-align: left;
@@ -237,41 +247,41 @@ padding: 11px 11px 11px 0;
    INFO MODAL WHERE TRAIN IS
    ========================================================================== */
 
-.trains-modal .social-icons{
+#trafficntravelvis .trains-modal .social-icons{
   display:inline-block;
     margin:0 auto;
 }
 
-.trains-modal .social-icons span {
+#trafficntravelvis .trains-modal .social-icons span {
   margin: 10px
 }
 
 
 @media screen and (min-width: 481px) {
 
-  .departure-field, .destination-field{
+ #trafficntravelvis .departure-field, .destination-field{
   width:43%;
   float:left;
   padding:15px 0 0 15px;
 }
 
-.train-times thead tr th:nth-child(1) {
+#trafficntravelvis .train-times thead tr th:nth-child(1) {
 padding-left:20px;
 }
 
-  .train-times tr td:nth-child(1) {
+#trafficntravelvis .train-times tr td:nth-child(1) {
 padding-left: 23px;
 }
 
-  .train-times form label{
+#trafficntravelvis  .train-times form label{
   font-size:1.4em;
 }
 
-.train-times form input{
+#trafficntravelvis .train-times form input{
   font-size:1.2em;
 }
 
-.train-select{
+#trafficntravelvis .train-select{
   margin-top:50px;
 }
 
