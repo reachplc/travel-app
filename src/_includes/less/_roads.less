@@ -3,14 +3,14 @@ Buses Elements - Layout
 ========================================================================== */
 
 
-* {
+#trafficntravelvis * {
    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
 }
 
 
-.cf:before, .cf:after{
+#trafficntravelvis .cf:before, .cf:after{
   content: "";
   display: table;
   clear: both;
@@ -22,19 +22,19 @@ Buses Elements - Layout
 
 =====================================================*/
 
-.tt__wrapper ul{
+#trafficntravelvis .tt__wrapper ul{
   margin:0; padding:0;
   background-color:#000;
 }
 
-.tt__wrapper ::selection {
+#trafficntravelvis .tt__wrapper ::selection {
   background: #c8c8c8; /* WebKit/Blink Browsers */
 }
-.tt__wrapper ::-moz-selection {
+#trafficntravelvis .tt__wrapper ::-moz-selection {
   background: #c8c8c8; /* Gecko Browsers */
 }
 
-.tt__wrapper{
+#trafficntravelvis .tt__wrapper{
   display:block;
 	max-width:950px;
   margin: 0 auto;
@@ -45,7 +45,7 @@ Buses Elements - Layout
 }
 
 @media screen and (min-width: 481px) {
-  .tt__wrapper{
+  #trafficntravelvis .tt__wrapper{
   margin: 20px auto;
   }
 }
@@ -56,7 +56,7 @@ Road Update Section
 
 ===================================================== */
 
-.tt-entry{
+#trafficntravelvis .tt-entry{
   display:block;
   #GradientGrey > .vertical;
   position:relative;
@@ -64,17 +64,17 @@ Road Update Section
   transition: all .2s ease;
 }
 
-#road-news, .road-status-menu{
+#trafficntravelvis #road-news, .road-status-menu{
   display:block;
 }
 
-.entry-fade{
+#trafficntravelvis .entry-fade{
   background-color: rgb(255,255,255);
   opacity:0.5;
 
 }
 
-.in-shadow{
+#trafficntravelvis .in-shadow{
   position:absolute;
   z-index:1;
   .innershadow;
@@ -89,7 +89,7 @@ Global Road Update Icons
 
 ===================================================== */
 
-.ru-icon {
+#trafficntravelvis .ru-icon {
   position:absolute;
   height:100%;
   width:80px;
@@ -97,7 +97,7 @@ Global Road Update Icons
   left:0;
 }
 
-.status-icon{
+#trafficntravelvis .status-icon{
   background-image:url(../gui/status-icons/sprite_icon_status.svg);
   background-size: 500%;
   background-repeat: no-repeat;
@@ -106,93 +106,93 @@ Global Road Update Icons
   margin: 10px auto 0 auto;
 }
 
-.severity-high .ru-icon{
+#trafficntravelvis .severity-high .ru-icon{
   background-position: 5px 5px;
   border-right:solid 8pt @severity5;
 }
 
-.severity-med .ru-icon{
+#trafficntravelvis .severity-med .ru-icon{
   background-position: -66px 5px;
   border-right:solid 8pt @severity4;
 }
 
-.severity-low .ru-icon{
+#trafficntravelvis .severity-low .ru-icon{
   background-position: -135px 5px;
   border-right:solid 8pt @severity3;
 }
 
-.severity-cleared .ru-icon{
+#trafficntravelvis .severity-cleared .ru-icon{
   background-position: -277px 5px;
   border-right:solid 8pt @severity1;
 }
 
-.special-event .ru-icon{
+#trafficntravelvis .special-event .ru-icon{
   background-position: -205px 5px;
   border-right:solid 8pt @eventsWarning;
 }
 
-.road-closed .ru-icon{
+#trafficntravelvis .road-closed .ru-icon{
   background-position: 6px -80px;
   border-right:solid 8pt @severity5;
 }
 
-.accident .ru-icon{
+#trafficntravelvis .accident .ru-icon{
   background-position: -68px -80px;
   border-right:solid 8pt @severity5;
 }
 
-.lane-closure .ru-icon{
+#trafficntravelvis .lane-closure .ru-icon{
   background-position: -275px -80px;
   border-right:solid 8pt @severity5;
 }
 
 @media screen and (min-width: 481px) {
 
-.ru-icon {
+#trafficntravelvis .ru-icon {
   width:100px;
 }
 
-.status-icon{
+#trafficntravelvis .status-icon{
   background-size: 400%;
   min-height: 90px;
 }
 
-.severity-high .ru-icon{
+#trafficntravelvis .severity-high .ru-icon{
   background-position: 15px -1px;
   border-right:solid 8pt @severity5;
 }
 
-.severity-med .ru-icon{
+#trafficntravelvis .severity-med .ru-icon{
   background-position: -60px -1px;
   border-right:solid 8pt @severity4;
 }
 
-.severity-low .ru-icon{
+#trafficntravelvis .severity-low .ru-icon{
   background-position: -132px 1px;
   border-right:solid 8pt @severity3;
 }
 
-.severity-cleared .ru-icon{
+#trafficntravelvis .severity-cleared .ru-icon{
   background-position: -278px 2px;
   border-right:solid 8pt @severity1;;
 }
 
-.special-event .ru-icon{
+#trafficntravelvis .special-event .ru-icon{
   background-position: -202px 2px;
   border-right:solid 8pt @eventsWarning;
 }
 
-.road-closed .ru-icon{
+#trafficntravelvis .road-closed .ru-icon{
   background-position: 15px -87px;
   border-right:solid 8pt @severity5;
 }
 
-.accident .ru-icon{
+#trafficntravelvis .accident .ru-icon{
   background-position: -60px -85px;
   border-right:solid 8pt @severity5;
 }
 
-.lane-closure .ru-icon{
+#trafficntravelvis .lane-closure .ru-icon{
   background-position: -274px -87px;
   border-right:solid 8pt @severity4;
 }
@@ -206,12 +206,12 @@ Global Road Update Icons
 
  ===================================================== */
 
-.ru-details{
+#trafficntravelvis .ru-details{
   margin-left: 80px;
   padding:5px 20px;
 }
 
-.ru-details h3{
+#trafficntravelvis .ru-details h3{
   font-size:1.1em;
   font-weight:700;
   line-height:1.1em;
@@ -221,28 +221,28 @@ Global Road Update Icons
 
 @media screen and (min-width: 481px) {
 
-  .ru-details{
+  #trafficntravelvis .ru-details{
     padding:10px 20px;
   }
 
-  .ru-details h3 {
+  #trafficntravelvis .ru-details h3 {
     font-size: 1.3em;
   }
 
 }
 
-.ru-details p{
+#trafficntravelvis .ru-details p{
   font-size:1.1em;
   padding-bottom: 0.5em
 }
 
-.ru-area{
+#trafficntravelvis .ru-area{
   position:relative;
   margin:10px 0 5px;
   padding: 5px 40px 5px 0;
 }
 
-.ru-area-drop{
+#trafficntravelvis .ru-area-drop{
   position: absolute;
   background-image: url(../gui/expand-icon.svg);
   background-position: 0 0;
@@ -254,35 +254,35 @@ Global Road Update Icons
   cursor: pointer;
 }
 
-.severity-high .drop-active{
+#trafficntravelvis .severity-high .drop-active{
    background-position: -27px 0;
 }
 
-.severity-med .drop-active{
+#trafficntravelvis .severity-med .drop-active{
    background-position: -55px 0;
 }
 
-.severity-low .drop-active{
+#trafficntravelvis .severity-low .drop-active{
    background-position: -81px 0;
 }
 
-.severity-cleared .drop-active{
+#trafficntravelvis .severity-cleared .drop-active{
    background-position: -132px 0;
 }
 
-.special-event .drop-active{
+#trafficntravelvis .special-event .drop-active{
    background-position: -106px 0;
 }
 
-.road-closed .drop-active{
+#trafficntravelvis .road-closed .drop-active{
    background-position: -27px 0;
 }
 
-.accident .drop-active{
+#trafficntravelvis .accident .drop-active{
    background-position: -27px 0;
 }
 
-.lane-closure .drop-active{
+#trafficntravelvis .lane-closure .drop-active{
    background-position: -27px 0;
 }
 
@@ -292,21 +292,21 @@ Global Road Update Icons
 
  ===================================================== */
 
-.ru-top-bar{
+#trafficntravelvis .ru-top-bar{
   display:block;
   width:100%;
   #GradientGrey > .horizontal;
   margin: 10px 0 5px;
 }
 
-.ru-top-bar .road-name{
+#trafficntravelvis .ru-top-bar .road-name{
   position:relative;
   min-width:80px;
   display:inline-block;
   height:28px;
 }
 
-.ru-top-bar .clock-icon{
+#trafficntravelvis .ru-top-bar .clock-icon{
   display:block;
   background-image:url(../gui/clock-icon.svg);
   background-repeat: no-repeat;
@@ -317,7 +317,7 @@ Global Road Update Icons
 }
 
 
-.ru-top-bar .ru-time-text{
+#trafficntravelvis .ru-top-bar .ru-time-text{
  float:right;
  margin-left:10px;
  font-weight:700;
@@ -326,12 +326,12 @@ Global Road Update Icons
 
 
 @media screen and (min-width: 481px) {
-  .ru-details{
+ #trafficntravelvis .ru-details{
     margin-left: 100px;
   }
 }
 
-.road-name:before{
+#trafficntravelvis .road-name:before{
   content:'';
   top:0;
   right:-28px;
@@ -346,14 +346,14 @@ Severity High Classes
 
 ===================================================== */
 
-.severity-high .road-name:before, .road-closed .road-name:before, .accident .road-name:before{
+#trafficntravelvis .severity-high .road-name:before, #trafficntravelvis .road-closed .road-name:before, #trafficntravelvis .accident .road-name:before{
   border-top: solid 14px transparent;
   border-right: solid 14px transparent;
   border-left:solid 14px @severity5;
   border-bottom:solid 14px @severity5;
 }
 
-.severity-high .ru-top-bar h2, .road-closed .ru-top-bar h2, .accident .ru-top-bar h2, .lane-closure .ru-top-bar h2{
+#trafficntravelvis .severity-high .ru-top-bar h2, #trafficntravelvis .road-closed .ru-top-bar h2, #trafficntravelvis .accident .ru-top-bar h2, #trafficntravelvis .lane-closure .ru-top-bar h2{
   background-color:@severity5;
   padding:2px 8px 1px 8px;
 }
@@ -365,14 +365,14 @@ Severity Medium Classes
 
 ===================================================== */
 
-.severity-med .road-name:before, .lane-closure .road-name:before,{
+#trafficntravelvis .severity-med .road-name:before, #trafficntravelvis .lane-closure .road-name:before,{
   border-top: solid 14px transparent;
   border-right: solid 14px transparent;
   border-left:solid 14px @severity4;
   border-bottom:solid 14px @severity4;
 }
 
-.severity-med .ru-top-bar h2, .lane-closure .ru-top-bar h2{
+#trafficntravelvis .severity-med .ru-top-bar h2, #trafficntravelvis .lane-closure .ru-top-bar h2{
   background-color:@severity4;
   padding:2px 8px 1px 8px;
 }
@@ -383,14 +383,14 @@ Severity Low Classes
 
 ===================================================== */
 
-.severity-low .road-name:before{
+#trafficntravelvis .severity-low .road-name:before{
   border-top: solid 14px transparent;
   border-right: solid 14px transparent;
   border-left:solid 14px @severity3;
   border-bottom:solid 14px @severity3;
 }
 
-.severity-low .ru-top-bar h2{
+#trafficntravelvis .severity-low .ru-top-bar h2{
   background-color:@severity3;
   padding:2px 8px 1px 8px;
 }
@@ -403,28 +403,28 @@ Severity Low Cleared
 
 ===================================================== */
 
-.severity-cleared .road-name:before{
+#trafficntravelvis .severity-cleared .road-name:before{
   border-top: solid 14px transparent;
   border-right: solid 14px transparent;
   border-left:solid 14px @severity1;
   border-bottom:solid 14px @severity1;
 }
 
-.severity-cleared .ru-top-bar h2{
+#trafficntravelvis .severity-cleared .ru-top-bar h2{
   background-color:@severity1;
   padding:2px 8px 1px 8px;
 }
 
 /* Severity Low Cleared */
 
-.special-event .road-name:before{
+#trafficntravelvis .special-event .road-name:before{
   border-top: solid 14px transparent;
   border-right: solid 14px transparent;
   border-left:solid 14px @eventsWarning;
   border-bottom:solid 14px @eventsWarning;
 }
 
-.special-event .ru-top-bar h2{
+#trafficntravelvis .special-event .ru-top-bar h2{
   background-color:@eventsWarning;
   padding:2px 8px 1px 8px;
 }
@@ -437,13 +437,13 @@ Social Buttons
 
 ====================================================== */
 
-.ru-video{
+#trafficntravelvis .ru-video{
   display:block;
   float:left;
   margin-top:20px;
 }
 
-.s-icon{
+#trafficntravelvis .s-icon{
   display:block;
   float:left;
   width:42px;
@@ -458,78 +458,78 @@ Social Buttons
   background-color: @white;
 }
 
-.ru-social{
+#trafficntravelvis .ru-social{
   display:block;
   position: relative;
   display:none;
  margin-bottom:20px;
 }
 
-.ru-social-active{
+#trafficntravelvis .ru-social-active{
   display:block;
   overflow:visible;
   height: 120px;
 }
 
-.social-icons{
+#trafficntravelvis .social-icons{
   display:block;
   margin-top:20px;
   float:left;
 }
 
-.social-icons span{
+#trafficntravelvis .social-icons span{
   margin-right:4px;
 }
 
 @media screen and (min-width: 481px) {
 
-  .social-icons{
+ #trafficntravelvis .social-icons{
     float:right;
 }
 
-  .social-icons span{
+  #trafficntravelvis .social-icons span{
     margin-left: 20px;
   }
 }
 
-.ru-icon-video{
+#trafficntravelvis .ru-icon-video{
   background-position:-12px -13px;
   margin-right:5px;
 }
 
-.ru-icon-video:hover{
+#trafficntravelvis .ru-icon-video:hover{
   background-position:-12px -53px;
 }
 
-.ru-icon-email{
+#trafficntravelvis .ru-icon-email{
   background-position:-77px -14px;
 }
 
-.ru-icon-email:hover{
+#trafficntravelvis .ru-icon-email:hover{
   background-position:-77px -55px;
 }
 
-.ru-icon-twitter{
+#trafficntravelvis .ru-icon-twitter{
   background-position:-143px -12px;
 }
 
-.ru-icon-twitter:hover{
+#trafficntravelvis .ru-icon-twitter:hover{
   background-position:-143px -53px;
 }
 
-.ru-icon-facebook{
+#trafficntravelvis .ru-icon-facebook{
   background-position:-208px -12px;
 }
 
-.ru-icon-facebook:hover{
+#trafficntravelvis .ru-icon-facebook:hover{
   background-position:-208px -54px;
 }
 
 
-.ru-icon-google{
+#trafficntravelvis .ru-icon-google{
   background-position:-273px -12px;
 }
 
-.ru-icon-google:hover{
+#trafficntravelvis .ru-icon-google:hover{
   background-position:-273px -52px;
 }
