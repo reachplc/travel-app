@@ -133,6 +133,7 @@ $(document).ready(function() {
         FB.ui({
             method: 'feed',
             link: 'http://manchestereveningnews.co.uk/trafficandtravel',
+            picture: 'http://i4.manchestereveningnews.co.uk/incoming/article8384081.ece/alternates/s98/ManUtd-ManCity.jpg',
             name: document.title,
             description: msgShare
         }, function(response){});
